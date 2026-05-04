@@ -1,6 +1,6 @@
 <section class="google-maps">
     <div id="map"></div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp0kDqVwUv9_0nZGaXayLVLXrxfzdZwyg&callback=initMap&v=weekly" async></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ getenv('GOOGLE_MAPS_API_KEY') }}&callback=initMap&v=weekly" async></script>
     <script>
 		let map;
 		const position = { lat: 47.367942377942065, lng: 8.78459956540992 };

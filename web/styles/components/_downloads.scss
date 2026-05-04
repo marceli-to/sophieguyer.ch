@@ -1,0 +1,49 @@
+.downloads {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 9rem;
+	
+	&-list {
+		display: grid;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		grid-template-columns: 1fr;
+		gap: 1em;
+		
+		@include for-tablet-portrait-up {
+			width: 50%;
+		}
+		@include for-tablet-landscape-up {
+			width: (100% / 3);
+		}
+		
+		&.inline{
+			width: 100%;
+			grid-template-columns: 1fr;
+			@include for-tablet-portrait-up {
+				grid-template-columns: repeat(2, 1fr);
+			}
+			@include for-tablet-landscape-up{
+				width: 75%;
+				grid-template-columns: repeat(3, 1fr);
+				@at-root .big & {
+					grid-template-columns: repeat(2, 1fr);
+				}
+			}
+		}
+		
+	}
+}
+.download{
+	&-item{
+		display: flex;
+		
+		.button-download{
+			width: 100%;
+		}
+	}
+}
+

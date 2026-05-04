@@ -1,0 +1,58 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+fieldLayouts:
+  37b826d6-dbbf-447d-ba51-77fa7f9df227:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 24a29f2e-c32b-4ba2-98a5-e928cec7e7f0 # Opan-Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d2c25e4d-f17e-4320-acdc-eaa2644fb358
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 1a671493-c61e-44a8-96a9-3244729a919d
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 8025309e-1527-4fcf-a58a-bdb051215069 # Abstand nach oben
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d11cd21f-53a4-4190-8425-14d4d6a90d7f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Erweitert
+        uid: 622d17cb-db1d-4f48-96ce-e05bafaa5605
+        userCondition: null
+group: 055928d7-a692-4a58-8d1a-fad0f4605689 # Spezielle Inhalte
+groupChildBlockTypes: true
+handle: opanButton
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Opan-Button
+topLevel: true

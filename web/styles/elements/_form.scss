@@ -1,0 +1,94 @@
+.form {
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 4.5rem;
+	
+	&-group {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	&-control {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.reset-actions {
+		text-align: right;
+	}
+	
+	label {
+		&:not(.checkbox) {
+			font-size: 2.4rem;
+			@include bold();
+			text-transform: uppercase;
+			color: $color-gray;
+		}
+	}
+	
+	input {
+		font-size: 2rem;
+		padding: 0.5em 1em;
+		border: 2px solid $color-blue-dark;
+		border-radius: 0;
+		outline: none;
+	}
+}
+
+.fui-form {
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 4.5rem;
+	
+	&-group {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	&-control {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.reset-actions {
+		text-align: right;
+	}
+	
+	label {
+		&:not(.checkbox) {
+			font-size: 2rem;
+			@include bold();
+			text-transform: uppercase;
+			color: $color-gray;
+		}
+	}
+	
+	input, textarea {
+		font-size: 2rem;
+		padding: 0.5em 1em;
+		border: 2px solid $color-blue-dark;
+		border-radius: 0;
+		outline: none;
+		&:focus {
+			box-shadow: 0 0 0 0.25rem darken($color-blue-dark, 20%); // Change as needed
+		}
+	}
+	
+	.fui-submit {
+		font-size: 2rem;
+		padding: 0.5em 1em;
+		border: 2px solid $color-blue-dark;
+		background-color: $color-blue-dark;
+		border-radius: 0;
+		outline: none;
+
+		&:hover {
+			background-color: lighten($color-blue-dark, 10%); // Change as needed
+			border-color: lighten($color-blue-dark, 10%); // Change as needed
+		}
+		
+		&:focus {
+			box-shadow: 0 0 0 0.25rem darken($color-blue-dark, 20%); // Change as needed
+		}
+	}
+}

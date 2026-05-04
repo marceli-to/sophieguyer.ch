@@ -1,0 +1,46 @@
+<table class="activities-table">
+    <thead>
+    <tr>
+        <th>Tag</th>
+        <th>Datum</th>
+        <th>Beginn</th>
+        <th>Anlass</th>
+        <th>Lokalität</th>
+        <th>Zielgruppe</th>
+        <th>Bemerkung</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for activity in events %}
+        {% set locations = activity.location.all() %}
+        {% set targetAudiences = activity.targetAudience.all() %}
+
+        <tr>
+            <td>{{ activity.startDate|date('D')|slice(0,2) }}</td>
+            <td>{{ activity.startDate.format("d.m.Y") }} <span
+                        class="time">{{ activity.startDate.format("H:i") }} Uhr</span></td>
+            <td>{{ activity.startDate.format("H:i") }} Uhr</td>
+            <td>{{ activity.title }}</td>
+            <td>
+                {% for location in locations %}
+                    {{ location.title }}{% if not loop.last %}, {% endif %}
+                {% else %}
+                    Nicht erfasst
+                {% endfor %}
+            </td>
+            <td>
+                {% for targetAudience in targetAudiences %}
+                    {{ targetAudience.title }}{% if not loop.last %}, {% endif %}
+                {% else %}
+                    Nicht erfasst
+                {% endfor %}
+            </td>
+            <td></td>
+        </tr>
+    {% else %}
+        <tr>
+            <td colspan="7">Keine Anlässe gefunden</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>

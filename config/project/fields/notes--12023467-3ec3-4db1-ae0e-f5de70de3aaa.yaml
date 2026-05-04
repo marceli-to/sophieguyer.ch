@@ -1,0 +1,19 @@
+columnSuffix: wpnclybg
+contentColumnType: text
+fieldGroup: fea50c4b-4607-4f94-ad62-428efbe1d137 # Aktivitäten
+handle: notes
+instructions: 'Auf der Übersichtsseite können maximal 12 Zeichen dargestellt werden.'
+name: Bemerkungen
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

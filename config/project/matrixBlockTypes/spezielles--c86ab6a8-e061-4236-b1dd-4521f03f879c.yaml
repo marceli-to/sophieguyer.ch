@@ -1,0 +1,57 @@
+field: 87daceef-07b4-45bc-9502-7eada98bf283 # Content-Blöcke
+fieldLayouts:
+  167f2815-a313-48b2-9785-00114cbc71d5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 67954317-4873-4ce8-9b55-be19175e1237 # Spezielle Blöcke
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7f831c19-a84c-4d52-96cb-bc5ecd85369b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 0445592f-15da-403c-9921-92cb74367baf
+        userCondition: null
+fields:
+  67954317-4873-4ce8-9b55-be19175e1237: # Spezielle Blöcke
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: spezielleBloecke
+    instructions: 'Spezielle Blöcke die nur auf bestimmten Seiten vorkommen'
+    name: 'Spezielle Blöcke'
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: null
+      columns:
+        __assoc__:
+          -
+            - 5f50feae-7b02-4296-a42f-9a97ce8cfaed # Vorstand-Block
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_14_speziellebloecke}}'
+      fieldLayout: row
+      maxRows: 1
+      minRows: 0
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: 'Block auswählen'
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+handle: spezielles
+name: Spezielles
+sortOrder: 8

@@ -1,0 +1,36 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+fieldLayouts:
+  6e6c1612-de42-49bd-9877-afcc08314b54:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'An dieser Stelle wird die Karte (Google Maps) angezeigt.'
+            type: craft\fieldlayoutelements\Tip
+            uid: c8f09ce8-1f7a-4565-aab1-7ffa62c9ec84
+            userCondition: null
+        name: Hinweis
+        uid: 022e3dcc-bc88-4aa1-85e7-e2272fe15b69
+        userCondition: null
+group: 055928d7-a692-4a58-8d1a-fad0f4605689 # Spezielle Inhalte
+groupChildBlockTypes: true
+handle: googleMaps
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 1
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Google Maps'
+topLevel: true

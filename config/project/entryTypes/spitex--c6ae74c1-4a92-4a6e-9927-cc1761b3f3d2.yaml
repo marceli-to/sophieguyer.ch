@@ -1,0 +1,71 @@
+fieldLayouts:
+  49163c99-c455-41ac-ba8f-4ae32360f923:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 29b5ee9b-c761-4049-81ad-80bdad607e43
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ffdc79ed-f1d9-41e3-a305-6e0a0a368e63 # Header-Bild
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a2a8350d-2032-4316-9771-93bda6777786
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 49652bee-28dd-494f-8990-b2b61afae73b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 71e478d9-3453-4aab-9a4d-7a466a725836
+        userCondition: null
+handle: spitex
+hasTitleField: false
+name: Spitex
+section: 4110572d-1edb-4476-848c-56fc9445567e # Spitex
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

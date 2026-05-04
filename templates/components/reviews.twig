@@ -1,0 +1,24 @@
+{% import '/macros/review-box.twig' as ReviewBox %}
+
+{% set countDefaultArticles = globalSettings.countDefaultArticles %}
+{% set reviews = craft.entries().section('reviews').limit(countDefaultArticles).all() %}
+{% set remaining = craft.entries().section('reviews').count() - countDefaultArticles %}
+
+<div class="container">
+    <section class="reviews">
+        <div class="reviews-container" id="load-more-container">
+            {% for review in reviews %}
+                {{ ReviewBox.ReviewBox(review) }}
+            {% endfor %}
+        </div>
+        {% if remaining > 0 %}
+        <div class="load-more">
+            <button type="button" class="button button-blank" id="load-more" data-url="/api/rueckblicke" data-count="{{ countDefaultArticles }}">
+                <span class="h4">ältere Beiträge anzeigen</span>
+                <img src="/assets/icons/chevron-down.svg" class="icon" alt="">
+            </button>
+        </div>
+        {% endif %}
+    </section>
+    <script src="/js/modules/load-more.min.js"></script>
+</div>

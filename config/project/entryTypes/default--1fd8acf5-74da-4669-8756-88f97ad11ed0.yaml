@@ -1,0 +1,83 @@
+fieldLayouts:
+  4d840cc4-db29-4e57-8ba7-c0c62ef6e37b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: b63737ba-6c30-4bdd-9159-037b15d61193
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7b1fd445-81ea-436d-8033-89fbc11a6ca2 # Teaser
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 99b619c3-7803-454e-9cfe-22f9e4affd34
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 6a47eda7-5626-4f86-af6e-c123f3075757 # Titelbild
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c327d08a-b24c-4f7c-a6e0-b33cc844e0e9
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d2f5fc69-a928-4787-996c-026ee0b7c399
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 0b365f49-b7ae-4448-976f-8d7dca5f6cbe
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Standard
+section: 4554c04a-40cb-459e-8db6-4f02dea5613c # Rückblicke
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,26 @@
+$alert-padding: 15px;
+$alert-border-radius: 4px;
+$alert-border-width: 1px;
+$alert-font-size: 16px;
+
+@mixin alert($color) {
+  padding: $alert-padding;
+  border-radius: $alert-border-radius;
+  border: $alert-border-width solid $color;
+  background-color: lighten($color, 40%);
+  color: darken($color, 20%);
+  font-size: $alert-font-size;
+}
+
+$alert-colors: (
+  "success": #28a745,
+  "danger": #dc3545,
+  "warning": #ffc107,
+  "info": #17a2b8
+);
+
+@each $name, $color in $alert-colors {
+  .alert-#{$name} {
+    @include alert($color);
+  }
+}

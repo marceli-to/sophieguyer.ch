@@ -1,0 +1,82 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+fieldLayouts:
+  6e293650-6ef6-40d5-9370-9f3a68f15f04:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: be045fdf-3956-4b5f-971f-250ad522c821 # Titel
+            instructions: 'Titel, der - falls vorhanden - oberhalb der Downloads angezeigt werden soll.'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8a68d419-7805-4c34-9378-4697548b5b07
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e6263340-32e4-4117-904f-d6836f35a7bd # Downloads
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1b1e1a0a-b944-453d-9043-24a3c2d93161
+            userCondition: null
+            warning: null
+            width: 100
+        name: Downloads
+        uid: ab744ab4-5a6d-4efc-8fb1-a25f3316d457
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 45ce050b-b0b9-48ae-8c01-3d4a9f6f233d # Anordnung
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2dd1ffe2-6849-456c-aa84-ece189c044d2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8025309e-1527-4fcf-a58a-bdb051215069 # Abstand nach oben
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 49720615-919c-4716-a14f-9a977157314e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Erweitert
+        uid: b5db9024-65f3-42f2-8afe-0c11e0fa7c9e
+        userCondition: null
+group: 7efffe68-08da-4be7-84cb-405497b61121 # Komponenten
+groupChildBlockTypes: true
+handle: downloads
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Downloads
+topLevel: true

@@ -1,0 +1,120 @@
+fieldLayouts:
+  22624df6-856b-4314-a02c-32c2bef2eaee:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 8e4e3768-a4a9-4988-be55-075e97aed157 # Firmenname
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 56f723f2-81d6-4c9f-a0ca-fee0117d859e
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 334dc69c-b2cf-4859-9cbd-ce95e881cb97 # Telefon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 34d422a0-6585-4c96-9449-9e7bb1b0dcd0
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: dfdd2912-b5c1-4601-82a2-43be4bd1f902 # Adresse
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 471fd12d-d565-44dd-adf3-9356ab9ffefc
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 2a47a8ab-ce89-4695-91b6-78f0f52c6e8d # Fax
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2ba94661-87de-4231-8e5a-0abad80eff82
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 275d7d80-4d75-49cf-aa8b-9c1b4be69e81 # PLZ
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8451aa93-44cb-41ca-a439-32895cf1bf8b
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 3a31e29e-28b3-44ae-b96a-88af5198109d # E-Mail
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 500bf877-d8ba-4dce-91c3-0a5c5aa7170c
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 13f8b1c6-e4d6-4c46-bea7-8886093a8144 # Ort
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 20002854-b33b-4494-a124-2012e5dc3fe8
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 479ec2fa-ddb7-4750-b07a-ed794e759d6d # Social Profiles
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 619ec36c-5cca-4ae5-abce-5411db10d214
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7b1fd445-81ea-436d-8033-89fbc11a6ca2 # Teaser
+            instructions: 'Text wird im Footer angezeigt'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 45ec5f83-82c8-4b5c-b9bb-3cebe4044d9b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Allgemein
+        uid: d56c6763-36c3-4c41-827e-9a36b387b124
+        userCondition: null
+handle: globalInformation
+name: Allgemein
+sortOrder: 2

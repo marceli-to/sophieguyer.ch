@@ -1,0 +1,35 @@
+columnSuffix: gxeavomi
+contentColumnType: string
+fieldGroup: b7747b1c-b7d1-4853-aecf-19b134ac11ae # Neo
+handle: align
+instructions: 'Soll das Bild links oder rechts vom Text angezeigt werden?'
+name: Ausrichtung
+searchable: false
+settings:
+  columnType: string
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Links
+        -
+          - value
+          - left
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Rechts
+        -
+          - value
+          - right
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

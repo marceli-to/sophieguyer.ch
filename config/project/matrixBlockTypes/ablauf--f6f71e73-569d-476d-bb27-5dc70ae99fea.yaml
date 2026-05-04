@@ -1,0 +1,64 @@
+field: 87daceef-07b4-45bc-9502-7eada98bf283 # Content-Blöcke
+fieldLayouts:
+  a9a07917-c31d-48a1-a164-cf0ba946558a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: b438a2f2-5aea-4042-98a5-09661bb1b62e # Schritt
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e81b5400-ad4e-42c3-838d-75e67a019284
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a54293d0-d106-4247-b815-088678d386cb
+        userCondition: null
+fields:
+  b438a2f2-5aea-4042-98a5-09661bb1b62e: # Schritt
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: schritt
+    instructions: null
+    name: Schritt
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: null
+      columns:
+        __assoc__:
+          -
+            - 2a15eb42-44d2-4ef2-8bd5-7cffd67283d1 # Titel
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - fdfea637-9d9a-4e0d-8e75-3a6217c969d6 # Text
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_5_schritt}}'
+      fieldLayout: row
+      maxRows: null
+      minRows: 1
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: 'Schritt hinzufügen'
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+handle: ablauf
+name: Ablauf
+sortOrder: 5

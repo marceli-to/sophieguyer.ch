@@ -1,0 +1,55 @@
+#activities-table{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.activities-table{
+	width: 100%;
+}
+.activities {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 4.5rem;
+	
+	
+	
+	&-table {
+		.time {
+			@include for-tablet-portrait-up {
+				display: none;
+			}
+		}
+		
+		td {
+			transition: all 0.15s ease-in-out;
+		}
+		
+		tr:hover td {
+			background-color: rgba(0, 0, 0, 0.05);
+		}
+		
+		// Tag
+		td:nth-child(1),
+		th:nth-child(1),
+			
+			// Beginn
+		td:nth-child(3),
+		th:nth-child(3),
+			
+			// Zielgruppe
+		td:nth-child(6),
+		th:nth-child(6),
+			
+			// Bemerkungen
+		td:nth-child(7),
+		th:nth-child(7),
+		{
+			display: none;
+			@include for-tablet-portrait-up {
+				display: table-cell;
+			}
+		}
+		
+	}
+}

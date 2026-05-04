@@ -1,0 +1,16 @@
+{% import '/macros/member.twig' as Member %}
+
+<div class="container {{ block.marginTop }}">
+    <section class="team">
+        <article class="team-category">
+            {% if block.titel is not empty %}
+            <h2>{{ block.titel }}</h2>
+            {% endif %}
+            <section class="members">
+                {% for member in block.team.all() %}
+                    {{ Member.Member(member) }}
+                {% endfor %}
+            </section>
+        </article>
+    </section>
+</div>

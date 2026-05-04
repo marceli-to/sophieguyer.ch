@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 215008ac-e8a5-4256-9b36-889c61e69eff # Common
+handle: contentblocks
+instructions: null
+name: Content-Blöcke
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_contentblocks}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

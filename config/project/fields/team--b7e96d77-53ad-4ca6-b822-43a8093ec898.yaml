@@ -1,0 +1,24 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: b7747b1c-b7d1-4853-aecf-19b134ac11ae # Neo
+handle: team
+instructions: null
+name: Team
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: 'Teammitglied hinzufügen'
+  showSiteMenu: false
+  sources:
+    - 'section:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Teammitglieder
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

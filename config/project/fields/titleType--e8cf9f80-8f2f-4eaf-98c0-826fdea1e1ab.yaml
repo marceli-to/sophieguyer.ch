@@ -1,0 +1,46 @@
+columnSuffix: eauzgfpl
+contentColumnType: string
+fieldGroup: b7747b1c-b7d1-4853-aecf-19b134ac11ae # Neo
+handle: titleType
+instructions: 'Grösse des Titels, sofern Titel vorhanden.'
+name: Titel-Grösse
+searchable: false
+settings:
+  columnType: string
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Gross
+        -
+          - value
+          - h1
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Mittel
+        -
+          - value
+          - h2
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Klein
+        -
+          - value
+          - h3
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

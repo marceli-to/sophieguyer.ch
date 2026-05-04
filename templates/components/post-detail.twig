@@ -1,0 +1,14 @@
+<div class="container">
+    <section class="post-detail">
+        <article class="post">
+            <h1>{{ entry.title }}</h1>
+        </article>
+        <aside class="post-navigation">
+            {% include '/partials/post-navigation.twig' %}
+        </aside>
+    </section>
+</div>
+<div class="container mt-0 post-date-container">
+    <time>{{entry.postDate|date('d.m.Y')}}</time>
+</div>
+{% include '/components/neo-content.twig' %}

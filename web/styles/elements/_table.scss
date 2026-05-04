@@ -1,0 +1,34 @@
+table {
+	font-size: 1.6rem;
+	border-collapse: collapse;
+}
+
+tr {
+	&:last-child {
+		td {
+			border-bottom: none;
+		}
+	}
+}
+
+th,
+td {
+	padding: 1em 1em 1em 0;
+	
+	&:last-child {
+		padding-right: 0;
+	}
+}
+
+th {
+	@include bold();
+	padding-bottom: 0.5em;
+	text-align: left;
+	text-transform: uppercase;
+	color: $color-gray-dark;
+}
+
+td {
+	border-bottom: 1px solid $color-black;
+}
+

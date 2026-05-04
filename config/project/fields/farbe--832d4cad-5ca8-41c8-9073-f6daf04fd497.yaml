@@ -1,0 +1,57 @@
+columnSuffix: dplqfupm
+contentColumnType: string
+fieldGroup: b7747b1c-b7d1-4853-aecf-19b134ac11ae # Neo
+handle: farbe
+instructions: null
+name: Farbe
+searchable: false
+settings:
+  columnType: string
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Allgemein
+        -
+          - value
+          - allgemein
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'Freie Trauung'
+        -
+          - value
+          - freieTrauung
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Willkommensfeier
+        -
+          - value
+          - willkommensfeier
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Abschiedsfeier
+        -
+          - value
+          - abschiedsfeier
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

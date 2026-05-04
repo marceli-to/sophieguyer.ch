@@ -1,0 +1,46 @@
+columnSuffix: wcswmdel
+contentColumnType: string
+fieldGroup: b7747b1c-b7d1-4853-aecf-19b134ac11ae # Neo
+handle: marginTop
+instructions: 'Abstand zwischen diesem und dem vorherigen Inhalts-Block. Nur relevant, wenn ein Inhalts-Block näher beim letzen Block erscheinen sollen.'
+name: 'Abstand nach oben'
+searchable: false
+settings:
+  columnType: string
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Normal (100%)'
+        -
+          - value
+          - mt-90
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 50%
+        -
+          - value
+          - mt-45
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 25%
+        -
+          - value
+          - mt-22
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

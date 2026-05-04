@@ -1,0 +1,36 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+fieldLayouts:
+  24bac597-2f3f-4e4f-bba3-859131138c3d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'An dieser Stelle werden die News-Beiträge eingeblendet. Die Artikel selbst befinden sich unter "Einträge" > "News"'
+            type: craft\fieldlayoutelements\Tip
+            uid: d2733d95-623e-4cb2-b365-8386ff0472a3
+            userCondition: null
+        name: Hinweis
+        uid: 13a4604e-d4ca-43f4-af85-8bcfc303641c
+        userCondition: null
+group: 055928d7-a692-4a58-8d1a-fad0f4605689 # Spezielle Inhalte
+groupChildBlockTypes: true
+handle: articles
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Alle News-Beiträge'
+topLevel: true

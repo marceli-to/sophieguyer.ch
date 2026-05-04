@@ -1,0 +1,19 @@
+columnSuffix: null
+contentColumnType: text
+fieldGroup: 215008ac-e8a5-4256-9b36-889c61e69eff # Common
+handle: phone
+instructions: 'Mit Abstand eingeben, also z.B. +41 44 123 45 67'
+name: Telefon
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: '+41 ...'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

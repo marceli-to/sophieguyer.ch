@@ -1,0 +1,15 @@
+.load-more {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+	.button {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	
+	.icon {
+		height: 2em;
+	}
+}

@@ -1,0 +1,70 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+fieldLayouts:
+  3fcc23f4-7b0e-42f1-94d4-39048b6c4864:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: be045fdf-3956-4b5f-971f-250ad522c821 # Titel
+            instructions: 'Leer lassen falls nicht benötigt.'
+            label: Abteilung/Bereich
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b86c715a-e495-4d67-942d-9e417efcb5cb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b7e96d77-53ad-4ca6-b822-43a8093ec898 # Team
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2db0a906-9d07-45ff-a9f3-c5c33156243f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 09012448-b37f-4cad-9225-4a49b83090fc
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 8025309e-1527-4fcf-a58a-bdb051215069 # Abstand nach oben
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 71aab98e-a542-408e-b305-8c332c4d780a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Erweitert
+        uid: 5e39d076-361e-4280-bfa7-4666207ec243
+        userCondition: null
+group: 7efffe68-08da-4be7-84cb-405497b61121 # Komponenten
+groupChildBlockTypes: true
+handle: team
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Team
+topLevel: true

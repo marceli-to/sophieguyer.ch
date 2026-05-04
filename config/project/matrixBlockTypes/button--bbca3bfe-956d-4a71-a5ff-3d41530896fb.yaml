@@ -1,0 +1,82 @@
+field: 87daceef-07b4-45bc-9502-7eada98bf283 # Content-Blöcke
+fieldLayouts:
+  c99ff429-d7e2-4053-bab3-f5e7aa615419:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 085e2d53-fb75-46fc-b3c8-c42267dd9aa8 # Button-Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e24c26b6-f427-4f09-b4ef-26a02e383463
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3ae4f5c6-cf0d-4193-a762-d44763358b77 # Button-Ziel
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8e2c163c-40ea-4fdd-81da-22ad115b5a03
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: cc663aa8-d230-4670-a927-b5beb4ddfb62
+        userCondition: null
+fields:
+  3ae4f5c6-cf0d-4193-a762-d44763358b77: # Button-Ziel
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: buttonZiel
+    instructions: null
+    name: Button-Ziel
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      branchLimit: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      selectionLabel: 'Button-Ziel auswählen'
+      showSiteMenu: true
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  085e2d53-fb75-46fc-b3c8-c42267dd9aa8: # Button-Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: null
+    name: Button-Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: button
+name: Button
+sortOrder: 3

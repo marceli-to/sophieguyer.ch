@@ -1,0 +1,46 @@
+field: bfbc6692-cb88-43cb-bcdd-57aee05ac2b1 # Zeilen-Typ mit...
+fieldLayouts:
+  49e528da-a6ab-4654-850e-43c4e891d62c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 6b9dd54d-c945-4b1b-8a59-f74fe7e827dc # t
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cb49f2ae-97cc-40cf-a7a0-c646f998a613
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 450c672d-e150-4ae6-8ab9-a3396509746b
+        userCondition: null
+fields:
+  6b9dd54d-c945-4b1b-8a59-f74fe7e827dc: # t
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: t
+    instructions: null
+    name: t
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: bildMitTextOverlay
+name: 'Bild & Botschaft'
+sortOrder: 1

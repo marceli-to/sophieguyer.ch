@@ -1,0 +1,23 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: fea50c4b-4607-4f94-ad62-428efbe1d137 # Aktivitäten
+handle: targetAudience
+instructions: 'Wählen Sie alle Zielgruppen für diese Aktivität aus. Neue Zielgruppen können unter "Kategorien" > "Zielgruppen" erfasst werden.'
+name: Zielgruppen
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: true
+  maxRelations: null
+  minRelations: null
+  selectionLabel: 'Zielgruppe hinzufügen'
+  showSiteMenu: true
+  source: 'group:af6cb2c5-7d46-494b-b7c3-cfc1cea57b3e' # Zielgruppen
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

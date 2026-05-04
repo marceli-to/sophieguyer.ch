@@ -1,0 +1,87 @@
+.member {
+	position: relative;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	
+	picture {
+		display: block;
+		width: 100%;
+	}
+	
+	@include for-desktop-up {
+		grid-template-rows: 1fr;
+		&:hover,
+		&:focus {
+			.member-overlay {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+	}
+	
+	
+	&-overlay {
+		font-size: 1.6rem;
+		display: flex;
+		flex-direction: column;
+		padding: 3rem;
+		color: $color-white;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		gap: 1em;
+		
+		@include for-desktop-up {
+			position: absolute;
+			visibility: hidden;
+			transition: all 0.15s ease-in-out;
+			opacity: 0;
+		}
+		
+		h3 {
+			margin-bottom: 0;
+			color: currentColor;
+		}
+		
+		a {
+			color: currentColor;
+			
+			&:hover {
+				color: currentColor;
+			}
+		}
+		
+		p{
+			display: flex;
+			flex-direction: column;
+			gap: 0.5em;
+		}
+		
+		
+		&-theme {
+			&-blue {
+				background: $color-blue;
+			}
+			
+			&-green {
+				background: $color-green;
+			}
+			
+			&-red {
+				background: $color-red;
+			}
+			
+			&-orange {
+				background: $color-orange;
+			}
+			
+			&-yellow {
+				color: $color-black;
+				background: $color-yellow;
+			}
+		}
+	}
+	
+	
+}

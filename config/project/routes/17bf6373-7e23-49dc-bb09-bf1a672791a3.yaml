@@ -1,0 +1,6 @@
+siteUid: null
+sortOrder: 3
+template: components/activities.twig
+uriParts:
+  - api/aktivitaeten
+uriPattern: api/aktivitaeten

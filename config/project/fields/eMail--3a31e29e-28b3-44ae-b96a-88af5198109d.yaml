@@ -1,0 +1,12 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 52d467fa-059b-40cd-8b69-7814ffa994c7 # Globals
+handle: eMail
+instructions: null
+name: E-Mail
+searchable: false
+settings:
+  placeholder: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Email

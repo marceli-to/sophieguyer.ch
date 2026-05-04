@@ -1,0 +1,36 @@
+{% macro HeaderImage(imageObject) %}
+    <section class="header-image-container">
+        <div class="header-image">
+            <picture>
+                {% if imageObject.one()|length %}
+                <img
+                        src="{{ imageObject.one().getUrl('headerLow') }}"
+                        data-src="{{ imageObject.one().getUrl('header') }}"
+                        class="lazyload"
+                        alt="{{ imageObject.title }}">
+                {% endif %}
+            </picture>
+            <div class="square-overlay">
+                <img src="/assets/images/square.png" alt="">
+                <div class="square-container square-theme-{{ random(1, 9) }}">
+                    <span class="square-item square-green"></span>
+                    <span class="square-item square-blue"></span>
+                    <span class="square-item square-red"></span>
+                    <span class="square-item square-orange"></span>
+                    <span class="square-item square-yellow"></span>
+                </div>
+            </div>
+        </div>
+        {% if craft.app.request.url == '/' and globalHeaderCta.titel|length %}
+            {% if globalHeaderCta.linkField.isEmpty() %}
+                <span class="header-image_cta">
+                    {{ globalHeaderCta.titel }}
+                </span>
+            {% else %}
+                <a class="header-image_cta" href="{{ globalHeaderCta.linkField }}">
+                    {{ globalHeaderCta.titel }}
+                </a>
+            {% endif %}
+        {% endif %}
+    </section>
+{% endmacro %}

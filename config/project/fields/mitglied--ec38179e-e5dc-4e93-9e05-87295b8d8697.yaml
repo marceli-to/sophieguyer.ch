@@ -1,0 +1,26 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 215008ac-e8a5-4256-9b36-889c61e69eff # Common
+handle: mitglied
+instructions: null
+name: Mitglied
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  selectionLabel: 'Mitglied auswählen'
+  showSiteMenu: true
+  sources:
+    - admins
+    - 'group:b00ea68c-8eba-40e6-b2b6-87ee41b8473e' # Editor
+    - 'group:49079c11-d33f-4f74-b6c3-ac19f13044cb'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Users

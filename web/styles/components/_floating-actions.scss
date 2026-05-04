@@ -1,0 +1,73 @@
+
+.floating-actions {
+	position: fixed;
+	top: 50%;
+	right: 0;
+	display: grid;
+	
+	width: 3em;
+	
+	transform: translateY(-33%);
+	grid-template-rows: repeat(3, 1fr);
+	@include for-tablet-landscape-up {
+		height: (3em * 4);
+		width: (3em * 4);
+		grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+	}
+	
+	.action {
+		display: flex;
+		cursor: pointer;
+		transition: all 0.15s ease-in-out;
+		opacity: 1;
+		&:hover,
+		&:focus{
+			opacity: 0.8;
+		}
+		&-back-to-top {
+			background: $color-green;
+		}
+		
+		&-font-size {
+			display: none;
+			background: $color-orange;
+		}
+		
+		&-heart {
+			display: none;
+			background: $color-red;
+		}
+		
+		&-activities {
+			background: $color-blue;
+		}
+		
+		&-news {
+			background: $color-yellow;
+		}
+		
+		@include for-tablet-landscape-up {
+			&-back-to-top {
+				grid-area: 1 / 1;
+			}
+			
+			&-font-size {
+				display: block;
+				grid-area: 2 / 3;
+			}
+			
+			&-heart {
+				display: block;
+				grid-area: 2 / 4;
+			}
+			
+			&-activities {
+				grid-area: 3 / 3;
+			}
+			
+			&-news {
+				grid-area: 4 / 4;
+			}
+		}
+	}
+}

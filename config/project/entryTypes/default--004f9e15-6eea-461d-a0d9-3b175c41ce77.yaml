@@ -1,0 +1,71 @@
+fieldLayouts:
+  9d159749-db02-4d4f-8ba6-498575678563:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 194d52dd-e20b-4699-a8e7-d33ed4b313fa
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ffdc79ed-f1d9-41e3-a305-6e0a0a368e63 # Header-Bild
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 79ec59c0-9791-4c3b-9df8-b15e4aae3046
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e8765b12-89c8-4836-962b-e1d97286299b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 2fd0f44e-3dd6-4535-a6ec-6566a25f7a53
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Standard
+section: 0a04dc24-5770-46b1-a339-d12721a592ce # Aktivitäten-Seiten
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,86 @@
+field: 87daceef-07b4-45bc-9502-7eada98bf283 # Content-Blöcke
+fieldLayouts:
+  1924a929-9ff4-4ed0-9fbb-8be2f7ef7290:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 126c8229-dc23-460c-aeb6-bdc886b6dbe6 # Titel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e5535408-c73f-4adf-894b-7402d2fada28
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b21cd4fa-97ca-47d9-877c-3c5ac507b5da # Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 75bc0a39-a0db-4a0d-af11-7c1503893e17
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 6dc15829-c0c1-4a4c-959e-30d27cad20ec
+        userCondition: null
+fields:
+  126c8229-dc23-460c-aeb6-bdc886b6dbe6: # Titel
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: titel
+    instructions: 'Wenn der Titel leergelassen wird, wird der Block als reiner Text-Block angezeigt.'
+    name: Titel
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b21cd4fa-97ca-47d9-877c-3c5ac507b5da: # Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: titelTextBlock
+name: Titel-Text-Block
+sortOrder: 1

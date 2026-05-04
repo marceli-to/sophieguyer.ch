@@ -1,0 +1,71 @@
+fieldLayouts:
+  04c80846-6444-4da4-91d7-00d1abde3194:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 7335f76d-6bcb-44a7-963e-628dbffe9117
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7b1fd445-81ea-436d-8033-89fbc11a6ca2 # Teaser
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8872efba-f61a-41da-9ce6-3c90e4dfe0c1
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 85f4de2d-d978-4893-ba3a-be94c3c70a78
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 90be23bd-74cc-4654-b9de-bb0f1cdc49e5
+        userCondition: null
+handle: articles
+hasTitleField: true
+name: Beiträge
+section: 2624cec9-061d-4431-9b04-f1b41ee88215 # News-Beiträge
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

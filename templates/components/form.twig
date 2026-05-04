@@ -1,0 +1,39 @@
+<div class="container {{ block.marginTop }}">
+    <section class="downloads">
+        <article class="download-category">
+            <style>.ffui-btn {
+    --fui-btn-font-size: 1rem;
+    --fui-btn-padding: 0.375rem 0.75rem;
+    --fui-btn-border-radius: 0.25rem;
+}
+
+.ffui-submit {
+    --fui-submit-btn-bg-color: #03803d;
+    --fui-submit-btn-border-color: #03803d;
+    --fui-submit-btn-bg-color-hover: #03803d;
+    --fui-submit-btn-border-color-hover: #03803d;
+    --fui-submit-btn-box-shadow-focus: 0 0 0 0.25rem rgba(3,128,61, 0.5);
+}
+
+.ffui-input,
+.ffui-select {
+    --fui-input-font-size: 16px;
+    --fui-input-padding: 0.75rem 1rem;
+    --fui-input-border-radius: 6px;
+
+}
+
+.fui-alert {
+    --fui-alert-padding: 2rem;
+    --fui-alert-font-size: 1.875rem;
+    --fui-alert-margin-bottom: 2rem;
+}
+
+
+</style>
+            {% set form = block.form.one() %}
+
+            {{ craft.formie.renderForm(form) }}
+
+    </section>
+</div>

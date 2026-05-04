@@ -1,0 +1,66 @@
+.location {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 3rem;
+	
+	@include for-tablet-portrait-up {
+		grid-template-columns: 4fr 8fr;
+	}
+	@include for-tablet-landscape-up {
+		grid-template-columns: 3fr 9fr;
+	}
+	
+	.legend {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1.5em;
+		
+		@include for-tablet-portrait-up {
+			grid-template-columns: 1fr;
+		}
+		
+		.item {
+			display: grid;
+			align-items: start;
+			grid-template-columns: 2.4rem auto;
+			gap: 1.2rem;
+		}
+		
+		&-square {
+			width: 2.4rem;
+			height: 2.4rem;
+			
+			&-green {
+				background-color: $color-green;
+			}
+			
+			&-blue {
+				background-color: $color-blue;
+			}
+			
+			&-red {
+				background-color: $color-red;
+			}
+			
+			&-orange {
+				background-color: $color-orange;
+			}
+			
+			&-yellow {
+				background-color: $color-yellow;
+			}
+		}
+		
+		&-value {
+			display: flex;
+			flex-direction: column;
+			gap: 0.5em;
+			
+			strong {
+				font-size: 2.4rem;
+				text-transform: uppercase;
+				color: $color-gray;
+			}
+		}
+	}
+}

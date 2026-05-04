@@ -1,0 +1,40 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+fieldLayouts:
+  7c81fc15-0975-4831-96c0-d6a62eea9c21:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 7216e3c6-766d-4677-a3bd-931760ee0dba # Formular
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 36f591ed-b70f-4df3-9e6e-5fdb0a4879ca
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 5c2d43b8-b196-404e-80e7-f39c7f64f835
+        userCondition: null
+group: 7efffe68-08da-4be7-84cb-405497b61121 # Komponenten
+groupChildBlockTypes: true
+handle: form
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Formular
+topLevel: true

@@ -1,0 +1,72 @@
+columnSuffix: hadphkdc
+contentColumnType: string
+fieldGroup: b7747b1c-b7d1-4853-aecf-19b134ac11ae # Neo
+handle: linkField
+instructions: null
+name: Link
+searchable: false
+settings:
+  allowCustomText: false
+  allowTarget: false
+  allowedLinkNames:
+    3: entry
+    4: category
+    6: custom
+    9: url
+  autoNoReferrer: false
+  customTextMaxLength: 0
+  customTextRequired: false
+  defaultLinkName: entry
+  defaultText: ''
+  enableAllLinkTypes: true
+  enableAriaLabel: false
+  enableElementCache: false
+  enableTitle: false
+  typeSettings:
+    asset:
+      allowCrossSiteLink: false
+      allowCustomQuery: false
+      enabled: false
+      sources: '*'
+    category:
+      allowCrossSiteLink: false
+      allowCustomQuery: false
+      enabled: false
+      sources: '*'
+    custom:
+      allowAliases: false
+      disableValidation: false
+      enabled: false
+    email:
+      allowAliases: false
+      disableValidation: false
+      enabled: false
+    entry:
+      allowCrossSiteLink: false
+      allowCustomQuery: false
+      enabled: false
+      sources: '*'
+    site:
+      enabled: false
+      sites: '*'
+    solspaceCalendar-event:
+      allowCrossSiteLink: false
+      allowCustomQuery: false
+      enabled: false
+      sources: '*'
+    tel:
+      allowAliases: false
+      disableValidation: false
+      enabled: false
+    url:
+      allowAliases: false
+      disableValidation: false
+      enabled: false
+    user:
+      allowCrossSiteLink: false
+      allowCustomQuery: false
+      enabled: false
+      sources: '*'
+translationKeyFormat: null
+translationMethod: none
+type: typedlinkfield\fields\LinkField

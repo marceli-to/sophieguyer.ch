@@ -1,0 +1,23 @@
+.team {
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+}
+
+.members {
+	display: grid;
+	grid-template-columns: 1fr;
+	@include for-tablet-portrait-up{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@include for-tablet-landscape-up{
+		grid-template-columns: repeat(3, 1fr);
+	}
+	@include for-desktop-up {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	
+	a{
+		word-break: break-word;
+	}
+}

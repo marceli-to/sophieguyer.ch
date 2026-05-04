@@ -1,0 +1,51 @@
+{% for block in entry.contentBlocksNeo.level(1).all() %}
+    {% set componentType = block.type.handle %}
+    {% set anchorSelector = block.titel is defined and block.titel != '' ? block.titel|kebab : "abschnitt-" ~ block.id %}
+
+    {% if componentType == 'text' %}
+        {% include "/components/text.twig" %}
+
+    {% elseif componentType == 'image' %}
+        {% include "/components/image.twig" %}
+
+    {% elseif componentType == 'downloads' %}
+        {% include "/components/downloads.twig" %}
+
+    {% elseif componentType == 'recentArticles' %}
+        {% include "/components/recent-articles.twig" %}
+
+    {% elseif componentType == 'articles' %}
+        {% include "/components/articles.twig" %}
+
+    {% elseif componentType == 'contactInformation' %}
+        {% include "/components/contact-information.twig" %}
+
+    {% elseif componentType == 'location' %}
+        {% include "/components/location.twig" %}
+
+    {% elseif componentType == 'googleMaps' %}
+        {% include "/components/google-maps.twig" %}
+
+    {% elseif componentType == 'team' %}
+        {% include "/components/team.twig" %}
+
+    {% elseif componentType == 'accordion' %}
+        {% include "/components/accordions.twig" %}
+
+    {% elseif componentType == 'gallery' %}
+        {% include "/components/gallery.twig" %}
+
+    {% elseif componentType == 'activities' %}
+        {% include "/components/activities.twig" %}
+
+    {% elseif componentType == 'reviews' %}
+        {% include "/components/reviews.twig" %}
+
+    {% elseif componentType == 'form' %}
+    {% include "/components/form.twig" %}
+
+    {% elseif componentType == 'opanButton' %}
+    {% include "/components/opan-button.twig" %}
+
+    {% endif %}
+{% endfor %}

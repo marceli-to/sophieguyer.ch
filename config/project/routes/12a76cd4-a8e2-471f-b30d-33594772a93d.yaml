@@ -1,0 +1,6 @@
+siteUid: null
+sortOrder: 6
+template: pages/api-reviews.twig
+uriParts:
+  - api/rueckblicke
+uriPattern: api/rueckblicke

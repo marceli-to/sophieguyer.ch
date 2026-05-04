@@ -1,0 +1,19 @@
+columnSuffix: null
+contentColumnType: text
+fieldGroup: 215008ac-e8a5-4256-9b36-889c61e69eff # Common
+handle: quelleAutor
+instructions: 'Falls "intern" eingegeben wird, wird auf der Webseite nichts angezeigt/ausgegeben.'
+name: 'Quelle / Autor'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

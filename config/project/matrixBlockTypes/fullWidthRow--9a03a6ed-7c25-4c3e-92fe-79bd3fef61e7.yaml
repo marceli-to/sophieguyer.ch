@@ -1,0 +1,138 @@
+field: 87daceef-07b4-45bc-9502-7eada98bf283 # Content-Blöcke
+fieldLayouts:
+  67451b1d-c80a-4812-a480-4e2f103c8ee4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 532bb106-b58d-461f-b9bf-54c9b2b4ab33 # Hintergrundbild
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 55de61e1-dba5-4323-be34-6a78736bb20b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c474d871-f53e-4314-83a5-9a1527400a34 # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 53a4ae0a-5f0c-40a4-86a8-4870daf400ac
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: de7b07a7-55ae-44d4-acc8-57d67ae65098 # Vollbildzeile
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cff62d83-8e08-4949-867b-511af92dfc88
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1dc6381a-8772-4c4f-94c1-6ab924b9cca5
+        userCondition: null
+fields:
+  532bb106-b58d-461f-b9bf-54c9b2b4ab33: # Hintergrundbild
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: hintergrundbild
+    instructions: null
+    name: Hintergrundbild
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+      restrictedLocationSubpath: null
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  c474d871-f53e-4314-83a5-9a1527400a34: # Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: optional
+    name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: Optional
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  de7b07a7-55ae-44d4-acc8-57d67ae65098: # Vollbildzeile
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: vollbildzeile
+    instructions: null
+    name: Vollbildzeile
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: null
+      columns:
+        __assoc__:
+          -
+            - bfbc6692-cb88-43cb-bcdd-57aee05ac2b1 # Zeilen-Typ mit...
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_4_vollbildzeile}}'
+      fieldLayout: matrix
+      maxRows: 1
+      minRows: 1
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: null
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+handle: fullWidthRow
+name: Vollbildzeile
+sortOrder: 4

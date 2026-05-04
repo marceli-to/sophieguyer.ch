@@ -1,0 +1,152 @@
+columnSuffix: null
+contentColumnType: text
+fieldGroup: 215008ac-e8a5-4256-9b36-889c61e69eff # Common
+handle: socials
+instructions: 'Im Feld "Link" den Link zum Profil angeben (inkl. https://..). Bei E-Mail/Telefon einfach nur Daten eingeben (z.B. +4179...)'
+name: 'Social Profiles'
+searchable: false
+settings:
+  addRowLabel: 'Profil hinzufügen'
+  columnType: text
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - Profil
+            -
+              - handle
+              - profil
+            -
+              - width
+              - ''
+            -
+              - type
+              - select
+            -
+              - options
+              -
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - Facebook
+                    -
+                      - value
+                      - facebook
+                    -
+                      - default
+                      - false
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - Instagram
+                    -
+                      - value
+                      - instagram
+                    -
+                      - default
+                      - false
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - Twitter
+                    -
+                      - value
+                      - twitter
+                    -
+                      - default
+                      - false
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - LinkedIn
+                    -
+                      - value
+                      - linkedin
+                    -
+                      - default
+                      - false
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - E-Mail
+                    -
+                      - value
+                      - message
+                    -
+                      - default
+                      - false
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - Phone
+                    -
+                      - value
+                      - phone
+                    -
+                      - default
+                      - false
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - TikTok
+                    -
+                      - value
+                      - tiktok
+                    -
+                      - default
+                      - false
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - Website
+                    -
+                      - value
+                      - link
+                    -
+                      - default
+                      - false
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - YouTube
+                    -
+                      - value
+                      - youtube
+                    -
+                      - default
+                      - false
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - Link
+            -
+              - handle
+              - link
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+  maxRows: null
+  minRows: null
+  staticRows: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table

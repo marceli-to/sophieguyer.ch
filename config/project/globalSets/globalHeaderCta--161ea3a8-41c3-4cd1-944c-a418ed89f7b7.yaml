@@ -1,0 +1,36 @@
+fieldLayouts:
+  dd911c5b-60ac-489a-9529-7f52e4bb69f1:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: be045fdf-3956-4b5f-971f-250ad522c821 # Titel
+            instructions: 'Inhalt des Kreises. Sollte nicht zu lang sein.'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 65e61370-818a-45c8-b920-3b256e75c6c7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 69a87f15-72c2-446c-a730-3eb979ac361e # Link
+            instructions: 'Der Link ist optional.'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c8271a43-4f6b-4afe-93d1-f0a4c5cb2f90
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 2b6871db-89d8-4132-8e3c-cc819a363189
+        userCondition: null
+handle: globalHeaderCta
+name: 'Header Call-to-Action Kreis'
+sortOrder: 4

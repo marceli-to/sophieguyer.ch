@@ -1,0 +1,203 @@
+field: 0bb99e04-bd9a-4506-8d53-a77f0f7faaf8 # Externer Autor
+fieldLayouts:
+  40da2d43-5f5d-4136-912d-977199a38b89:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: caa10602-6f6f-4e6b-be96-1b74923ffc6a # Name
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f8abfb9d-12b5-4e3f-b503-d7a96078fb37
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: da488c85-8f0b-4cf7-aa6e-69539bb43673 # Website
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7a3a7d08-9dca-4a09-8b53-b2d8fdfbb7b4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 75fdf69a-4a7d-441d-a66d-d72fc9471b1a # Social Profiles
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 444c59b4-22f1-48fa-8a90-242792b33613
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 38ded671-0af9-4353-bb10-39dedd158175
+        userCondition: null
+fields:
+  75fdf69a-4a7d-441d-a66d-d72fc9471b1a: # Social Profiles
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: socialProfiles
+    instructions: 'Im Feld "Link" den Link zum Profil angeben (inkl. https://..)'
+    name: 'Social Profiles'
+    searchable: false
+    settings:
+      addRowLabel: 'Profil hinzufügen'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Profil
+                -
+                  - handle
+                  - profil
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - select
+                -
+                  - options
+                  -
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Facebook
+                        -
+                          - value
+                          - facebook
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Instagram
+                        -
+                          - value
+                          - instagram
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - LinkedIn
+                        -
+                          - value
+                          - linkedin
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - TikTok
+                        -
+                          - value
+                          - tiktok
+                        -
+                          - default
+                          - false
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - YouTube
+                        -
+                          - value
+                          - youtube
+                        -
+                          - default
+                          - false
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Link
+                -
+                  - handle
+                  - link
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - url
+      defaults:
+        -
+          __assoc__:
+            -
+              - col1
+              - facebook
+            -
+              - col2
+              - ''
+      maxRows: null
+      minRows: null
+      staticRows: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+  caa10602-6f6f-4e6b-be96-1b74923ffc6a: # Name
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: vornameName
+    instructions: null
+    name: Name
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  da488c85-8f0b-4cf7-aa6e-69539bb43673: # Website
+    columnSuffix: null
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: website
+    instructions: 'Im Format http(s)://.....'
+    name: Website
+    searchable: false
+    settings:
+      maxLength: 255
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: externerAutor
+name: 'Externer Autor'
+sortOrder: 1

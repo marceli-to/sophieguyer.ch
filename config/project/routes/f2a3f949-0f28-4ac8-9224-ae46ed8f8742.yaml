@@ -1,0 +1,6 @@
+siteUid: null
+sortOrder: 4
+template: pages/pdf.twig
+uriParts:
+  - aktivitaeten-pdf
+uriPattern: aktivitaeten-pdf

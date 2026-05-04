@@ -1,0 +1,13 @@
+<div class="container {{ block.marginTop }}">
+    <section>
+
+        {% if block.image|length %}
+            <div class="image image-{{ block.align }}">
+                <picture>
+                    <img src="{{ block.image.one().getUrl('imageOnly') }}" alt="">
+                </picture>
+            </div>
+        {% endif %}
+
+    </section>
+</div>

@@ -1,0 +1,15 @@
+description: 'Reine Benutzerverwaltung (exkl. Intranet-Zugriff + Inhaltsbearbeitung)'
+handle: usermanagement
+name: Benutzerverwaltung
+permissions:
+  - accesscp
+  - administrateusers
+  - 'assignusergroup:17b4894f-2811-4992-b36e-a42a919cc0ad' # Intranet-Zugang (read-only)
+  - 'assignusergroup:5b6dfe74-4f0c-44fa-b405-871bf4abed9c' # Benutzerverwaltung
+  - 'assignusergroup:b00ea68c-8eba-40e6-b2b6-87ee41b8473e' # Editor
+  - 'assignusergroup:be9c0fc0-5723-4f6d-a5a6-4b128257b9c8'
+  - 'assignusergroup:e585eef4-d478-42f2-bd19-c3904d1d0575' # Intranet-Zugang
+  - deleteusers
+  - editusers
+  - moderateusers
+  - registerusers

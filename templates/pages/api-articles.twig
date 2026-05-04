@@ -1,0 +1,16 @@
+{% if craft.app.config.env == 'dev' %}
+    {% header "Access-Control-Allow-Origin: *" %}
+{% endif %}
+
+{% import '/macros/article-box.twig' as ArticleBox %}
+
+{% set offset = craft.app.request.getParam('offset') ?? 0 %}
+{% set count = craft.app.request.getParam('count') ?? globalSettings.countDefaultArticles %}
+{% set articles = craft.entries().section('articles').limit(count).offset(offset).all() %}
+{% set remaining = craft.entries().section('articles').count() - offset - articles|length %}
+
+<div data-hasmore="{{ remaining > 0 ? 'true' : 'false' }}">
+{% for article in articles %}
+    {{ ArticleBox.ArticleBox(article) }}
+{% endfor %}
+</div>

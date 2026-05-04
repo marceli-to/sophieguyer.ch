@@ -1,0 +1,7 @@
+allowPublicRegistration: false
+deactivateByDefault: false
+defaultGroup: ''
+photoSubpath: 'profiles/user-{id}'
+photoVolumeUid: ed7cb5c2-d98c-48fb-b033-83aecf9c869b # Object-Storage
+requireEmailVerification: false
+validateOnPublicRegistration: false

@@ -1,0 +1,36 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+fieldLayouts:
+  bd7b4629-d4d2-49b2-a866-5a505016c790:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'An dieser Stelle wird die Auflistung der Aktivitäten angezeigt.'
+            type: craft\fieldlayoutelements\Tip
+            uid: 50c6d452-d5f3-405b-97d7-804dadbe4e9e
+            userCondition: null
+        name: Hinweis
+        uid: b51b6040-5b13-46a4-b99f-7998cb904603
+        userCondition: null
+group: 055928d7-a692-4a58-8d1a-fad0f4605689 # Spezielle Inhalte
+groupChildBlockTypes: true
+handle: activities
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Aktivitäten
+topLevel: true

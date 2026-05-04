@@ -1,0 +1,31 @@
+<div class="container {{ block.marginTop }}">
+
+    {% if block.image|length %}
+        {% if block.align == 'left' %}
+            {% set sectionClass = "image-text" %}
+        {% elseif block.align == 'right' %}
+            {% set sectionClass = "text-image" %}
+        {% endif %}
+        {% if block.titel == "" %}
+            {% set sectionClass = sectionClass ~ ' no-title' %}
+        {% endif %}
+    {% else %}
+        {% set sectionClass = "text" %}
+    {% endif %}
+
+    <section class="{{ sectionClass }}" id="{{ anchorSelector }}">
+        <h2 class="{{ block.titleType ?? 'h2' }} title">{{ block.titel }}</h2>
+
+        {% if block.image|length %}
+            <div class="image image-{{ block.align }}">
+                <picture>
+                    <img src="{{ block.image.one().getUrl('inText') }}" alt="">
+                </picture>
+            </div>
+        {% endif %}
+
+        <div class="redactor-text">
+            {{ block.redactorText }}
+        </div>
+    </section>
+</div>

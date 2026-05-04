@@ -1,0 +1,37 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: cccc276f-76f1-40ae-a964-281e078791fe # Team
+handle: memberImage
+instructions: null
+name: Portrait
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: false
+  allowedKinds:
+    - image
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  defaultUploadLocationSubpath: '{id}'
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  previewMode: thumbs
+  restrictFiles: true
+  restrictLocation: true
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  restrictedLocationSubpath: profiles
+  selectionLabel: 'Bild hinzufügen'
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: true
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

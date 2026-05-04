@@ -1,0 +1,13 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: b7747b1c-b7d1-4853-aecf-19b134ac11ae # Neo
+handle: opanButton
+instructions: null
+name: Opan-Button
+searchable: false
+settings:
+  style: tip
+  tip: 'An dieser Stelle wird der Opan-Button eingeblendet.'
+translationKeyFormat: null
+translationMethod: none
+type: carlcs\uielementfields\fields\UiTip

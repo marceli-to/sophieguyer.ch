@@ -1,0 +1,41 @@
+changedFieldIndicator: null
+field: de7b07a7-55ae-44d4-acc8-57d67ae65098 # Vollbildzeile
+fieldLayouts:
+  8bfafcd7-a70c-42b7-820e-2419ceddde7b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: bfbc6692-cb88-43cb-bcdd-57aee05ac2b1 # Zeilen-Typ mit...
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ff4f4d8e-c386-4c99-a3e1-0b45bd9d7ef7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 9298e196-cbbc-4a29-8499-c66b39510a94
+        userCondition: null
+fields:
+  bfbc6692-cb88-43cb-bcdd-57aee05ac2b1: # Zeilen-Typ mit...
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: zeilenTyp
+    instructions: null
+    name: 'Zeilen-Typ mit...'
+    searchable: false
+    settings:
+      contentTable: '{{%matrixcontent_zeilentyp}}'
+      maxBlocks: 1
+      minBlocks: 1
+      propagationKeyFormat: null
+      propagationMethod: all
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix

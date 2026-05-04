@@ -1,0 +1,51 @@
+.post-detail {
+	display: grid;
+	grid-template-columns: 9fr 2fr 1fr;
+	gap: 3rem;
+	
+	.post {
+		display: flex;
+		flex-direction: column;
+		
+		time {
+			margin-bottom: 1em;
+		}
+		
+		* + picture,
+		picture + * {
+			margin-top: 9rem;
+		}
+		
+		&-navigation {
+			display: grid;
+			align-self: start;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 1.5rem;
+			
+			.button {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				padding: 0;
+				background: $color-blue-dark;
+				
+				svg{
+					transition: all 0.15s ease-in-out;
+					fill: $color-white;
+					height: 4rem;
+					width: 4rem;
+				}
+				
+				&:hover,
+				&:focus{
+					background-color: $color-white;
+					
+					svg{
+						fill: $color-blue-dark;
+					}
+				}
+			}
+		}
+	}
+}

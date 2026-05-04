@@ -1,0 +1,20 @@
+columnSuffix: gqmonsqa
+contentColumnType: smallint(2)
+fieldGroup: 52d467fa-059b-40cd-8b69-7814ffa994c7 # Globals
+handle: countDefaultArticles
+instructions: 'Anzahl Beiträge die standardmässig angezeigt werden, ohne mehr laden zu müssen.'
+name: 'Anzahl Beiträge'
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: null
+  max: 20
+  min: 1
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

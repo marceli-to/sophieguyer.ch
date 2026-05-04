@@ -1,0 +1,40 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+fieldLayouts:
+  6218f44e-01f7-40bf-8529-382dd1609a72:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 28d29cb9-c818-45e0-818d-d902c3b53c9a # Bild
+            instructions: 'Bild wird standardmässig in der Breite des Inhaltes angezeigt.'
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e2cb6545-0d85-4135-b8e3-9feeb55cbf68
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: f8d36b5d-47ab-4f08-b029-92cd5726ca8f
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: image
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Bild
+topLevel: true

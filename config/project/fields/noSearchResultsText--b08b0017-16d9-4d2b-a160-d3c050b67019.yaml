@@ -1,0 +1,19 @@
+columnSuffix: fujlqrlk
+contentColumnType: text
+fieldGroup: 52d467fa-059b-40cd-8b69-7814ffa994c7 # Globals
+handle: noSearchResultsText
+instructions: 'Text, der bei Mitglieder-Suche angezeigt werden soll, falls kein Mitglied den gewünschten Kriterien entspricht.'
+name: 'Text für "Keine Resultate gefunden"'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

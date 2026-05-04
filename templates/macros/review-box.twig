@@ -1,0 +1,15 @@
+{% macro ReviewBox(review) %}
+<article class="review-box">
+    {% if review.mainImage|length %}
+    <picture>
+        <img src="{{ review.mainImage.one().getUrl('square') }}" alt="">
+    </picture>
+    {% endif %}
+    <div class="review-box-text">
+        <time>{{ review.postDate|date('d.m.Y') }}</time>
+        <h3 class="h2">{{ review.title }}</h3>
+        {{ review.teaser }}
+        <a href="{{ review.url }}" class="button button-tertiary">Bericht und Impressionen</a>
+    </div>
+</article>
+{% endmacro %}

@@ -1,0 +1,13 @@
+.activities-filters-text{
+	width: 100%;
+	font-size: 1.6rem;
+}
+.activities-filter-text{
+	display: block;
+	float: left;
+	width: 33.333%;
+	
+	.label{
+		@include bold();
+	}
+}

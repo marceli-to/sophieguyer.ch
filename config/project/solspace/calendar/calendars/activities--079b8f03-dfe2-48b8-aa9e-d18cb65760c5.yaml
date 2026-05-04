@@ -1,0 +1,66 @@
+allowRepeatingEvents: true
+color: '#0066a8'
+description: ''
+descriptionFieldHandle: '0'
+fieldLayout:
+  tabs:
+    -
+      elementCondition: null
+      elements:
+        -
+          elementCondition: null
+          fieldUid: 78e4c4a7-8bdb-4ce9-bfdf-a9acd359bab2 # Lokalität
+          instructions: null
+          label: null
+          required: false
+          tip: null
+          type: craft\fieldlayoutelements\CustomField
+          uid: 0daec10e-07c2-47ee-90fa-45b48a99fa9b
+          userCondition: null
+          warning: null
+          width: 100
+        -
+          elementCondition: null
+          fieldUid: 6ba0a247-69b6-4586-ad86-4a8300bd4933 # Zielgruppen
+          instructions: null
+          label: null
+          required: false
+          tip: null
+          type: craft\fieldlayoutelements\CustomField
+          uid: 4fbc6a75-ac21-4c04-a59f-da36603640ad
+          userCondition: null
+          warning: null
+          width: 100
+        -
+          elementCondition: null
+          fieldUid: 12023467-3ec3-4db1-ae0e-f5de70de3aaa # Bemerkungen
+          instructions: null
+          label: null
+          required: false
+          tip: null
+          type: craft\fieldlayoutelements\CustomField
+          uid: aed8da33-f58a-49d5-a47a-f39bb7d754bb
+          userCondition: null
+          warning: null
+          width: 100
+      name: Details
+      uid: c3d0933c-19e5-4b1c-add0-0b472bae7367
+      userCondition: null
+  uid: 7ff6fc21-2b15-4fb6-8a89-2deaffadbe26
+handle: activities
+hasTitleField: true
+icsHash: null
+icsTimezone: floating
+locationFieldHandle: '0'
+name: Aktivitäten
+siteSettings:
+  9400f676-f354-4ad2-8152-754f3cb27d1e:
+    enabledByDefault: true
+    hasUrls: false
+    siteId: 8f7c0986-6e59-416f-a40c-3cafdb4e5953 # $SYS_NAME
+    template: null
+    uriFormat: null
+titleFormat: ''
+titleLabel: Anlass
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

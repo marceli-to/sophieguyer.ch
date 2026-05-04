@@ -1,0 +1,8 @@
+{% macro Accordion(accordionItem) %}
+    <details class="accordion">
+        <summary><h3 class="h2">{{ accordionItem.titel }}</h3></summary>
+        <div class="accordion-description">
+            {{ accordionItem.text }}
+        </div>
+    </details>
+{% endmacro %}

@@ -1,0 +1,23 @@
+{% import '/macros/header-image.twig' as HeaderImage %}
+
+{% extends '/partials/layout.twig' %}
+{% block content %}
+    {% include '/partials/navigation.twig' %}
+
+    {{ HeaderImage.HeaderImage(entry.headerImage) }}
+
+    <main class="animate-elements">
+        {% include "/components/main-title.twig" %}
+        <div class="container mt-90 visible">
+
+            <section class="text" id="abschnitt-943">
+                <script src="https://www.privacybee.ch/widget.js"></script>
+                <privacybee-widget website-id="cllqdfbb83522120ur0k1c2wzb" lang="de"></privacybee-widget>
+            </section>
+        </div>
+
+    </main>
+
+    {% include '/partials/footer.twig' %}
+
+{% endblock %}

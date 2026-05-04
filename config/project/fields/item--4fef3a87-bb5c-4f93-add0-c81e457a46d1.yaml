@@ -1,0 +1,37 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: b7747b1c-b7d1-4853-aecf-19b134ac11ae # Neo
+handle: item
+instructions: null
+name: Element
+searchable: false
+settings:
+  blockTypeFields: 0
+  changedFieldIndicator: null
+  columns:
+    __assoc__:
+      -
+        - f93807b1-4688-4a37-86e0-de4c1ee0c4d3 # Titel
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 8a4dc2a9-b4b0-4dd5-8d70-4502a16722e5 # Text
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_item}}'
+  fieldLayout: row
+  maxRows: null
+  minRows: 1
+  propagationKeyFormat: null
+  propagationMethod: all
+  selectionLabel: 'Element hinzufügen'
+  staticField: null
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

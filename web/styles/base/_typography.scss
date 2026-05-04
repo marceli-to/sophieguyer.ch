@@ -1,0 +1,139 @@
+html {
+	@include regular();
+	font-size: 10px;
+	color: $color-black;
+	&.big{
+		font-size: 13px;
+	}
+}
+.lead, strong, b{
+	@include bold();
+}
+i, em{
+	@include italic();
+}
+
+body {
+	font-size: 1.6rem;
+	line-height: 1.3;
+	scroll-behavior: smooth;
+	
+	@include for-tablet-landscape-up {
+		font-size: 2rem;
+	}
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	margin: 0;
+	color: $color-gray-dark;
+}
+
+h1,
+.h1 {
+	font-size: 3.3rem;
+	@include light();
+	line-height: 1.1;
+	margin-bottom: 0.5em;
+	text-transform: uppercase;
+	
+	@include for-tablet-landscape-up {
+		font-size: 6rem;
+	}
+}
+
+h2,
+.h2 {
+	@include bold();
+	font-size: 2.4rem;
+	// font-weight: 900;
+	line-height: 1.16;
+	margin-bottom: 0.5em;
+	text-transform: uppercase;
+	padding-top: 20px;
+	margin-top: -20px;
+}
+
+h3,
+.h3 {
+	font-size: 2.4rem;
+	@include light();
+	line-height: 1.16;
+	text-transform: uppercase;
+}
+
+h4,
+.h4 {
+	font-size: 2rem;
+	@include bold();
+	line-height: 1.3;
+	color: $color-gray;
+}
+
+h6,
+.h6 {
+	@include bold();
+	font-size: 1.4rem;
+	line-height: 1.3;
+	text-transform: uppercase;
+	
+	@include for-tablet-portrait-up {
+		font-size: 2rem;
+		text-transform: none;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+main {
+	a {
+		color: $color-blue-dark;
+		
+		&:hover {
+			color: $color-blue;
+		}
+	}
+}
+
+.a-no-style {
+	a {
+		color: currentColor;
+		
+		&:hover,
+		&:focus {
+			color: currentColor;
+		}
+	}
+}
+
+
+ul {
+	margin: 0;
+	padding-left: 1em;
+}
+
+p,
+ul,
+.inline-downloads,
+.inline-member {
+	margin: 0;
+	
+	+ ul,
+	+ p,
+	+ details,
+	+ .inline-downloads,
+	+ .inline-member {
+		margin-top: 1em;
+	}
+}
+
+details {
+	+ p,
+	+ ul,
+	+ .inline-downloads,
+	+ .inline-member {
+		margin-top: 1em;
+	}
+}

@@ -1,0 +1,7 @@
+description: 'Kann Dateien anzeigen aber keine Dateien ändern/löschen/hochladen.'
+handle: intranetLight
+name: 'Intranet-Zugang (read-only)'
+permissions:
+  - accesscp
+  - 'viewassets:660bdc7d-598b-4ca2-91f2-4262a2440f8b' # Interne Dateien
+  - 'viewpeerassets:660bdc7d-598b-4ca2-91f2-4262a2440f8b' # Interne Dateien

@@ -1,0 +1,36 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+fieldLayouts:
+  2e3e28a0-533f-4ca8-a1ab-bec5b382f7ce:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'An dieser Stelle wird der Situationsplan eingeblendet.'
+            type: craft\fieldlayoutelements\Tip
+            uid: b6a2cd55-1e91-4885-bde4-915c63e8ba3b
+            userCondition: null
+        name: Hinweis
+        uid: d310cebd-a8ad-4fd7-8470-63d9e0f3e6f9
+        userCondition: null
+group: 055928d7-a692-4a58-8d1a-fad0f4605689 # Spezielle Inhalte
+groupChildBlockTypes: true
+handle: location
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 1
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Situationsplan
+topLevel: true

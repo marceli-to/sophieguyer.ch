@@ -1,0 +1,83 @@
+fieldLayouts:
+  4c280c4a-fdca-4ced-a5aa-d1a01dcee32a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 8c290d2d-c359-450f-b40e-8877b113669c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: be045fdf-3956-4b5f-971f-250ad522c821 # Titel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8648caa7-40f4-4d5a-93e4-3a3d97960c28
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ffdc79ed-f1d9-41e3-a305-6e0a0a368e63 # Header-Bild
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4e4fd0ac-214d-42fa-a3b7-f26ae1afecae
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a62329a4-dfcb-4b08-a9ee-a262b7db230c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 578c24c7-5a7e-4c18-8a7d-b18155f3fe05
+        userCondition: null
+handle: kontakt
+hasTitleField: false
+name: Kontakt
+section: d264285e-fbff-447b-8a82-d6ff1f72bc49 # Kontakt
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

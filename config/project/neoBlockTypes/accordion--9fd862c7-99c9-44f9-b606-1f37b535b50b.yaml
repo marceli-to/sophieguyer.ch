@@ -1,0 +1,58 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+fieldLayouts:
+  320a3f32-f4be-478e-97ac-05e4ec96ed64:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4fef3a87-bb5c-4f93-add0-c81e457a46d1 # Element
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fc8be60a-287c-45bd-ae4f-4b5f744f60cc
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 593b6fdf-b24d-4a09-a3b9-c6b168f94a50
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 8025309e-1527-4fcf-a58a-bdb051215069 # Abstand nach oben
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 22497156-cad4-4f10-bb05-47fd2c1c9111
+            userCondition: null
+            warning: null
+            width: 100
+        name: Erweitert
+        uid: e37684c2-f28b-470d-9932-40203bcc4d04
+        userCondition: null
+group: 7efffe68-08da-4be7-84cb-405497b61121 # Komponenten
+groupChildBlockTypes: true
+handle: accordion
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Akkordeon
+topLevel: true

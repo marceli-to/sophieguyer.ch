@@ -1,0 +1,80 @@
+{#{% cache using key (craft.calendar.calendarsCacheKey ~ craft.calendar.eventsCacheKey) %}#}
+
+        {# Defaults #}
+        {% set rangeStartGetFilterParam = 'today' %}
+        {% set rangeEndGetFilterParam = globalSettings.calenderDateRangeEnd ~ ' days' %}
+
+        {# Fetch all events to populate activities filter dropdown #}
+        {% set allEvents = craft.calendar.events({calendar: "activities", rangeStart: rangeStartGetFilterParam, rangeEnd: rangeEndGetFilterParam,limit: "100"}).all() %}
+    
+        {# Filter logic using GET params #}
+        {% if craft.app.request.getParam('date') %}
+            {% set rawInputDate = craft.app.request.getParam('date')|split(' - ') %}
+            {% if rawInputDate|length == 2 and rawInputDate[0]|length == 10 and rawInputDate[1]|length == 10 and "." in rawInputDate[0] and "." in rawInputDate[1] %}
+                {% set rangeStartGetFilterParam = rawInputDate[0]|date('Y-m-d') %}
+                {% set rangeEndGetFilterParam = rawInputDate[1]|date('Y-m-d') %}
+            {% endif %}
+        {% endif %}
+
+        {% set eventGetFilterParam = craft.app.request.getParam('aktivitaet') ?? null %}
+        {% set eventGetFilterParam = eventGetFilterParam == null ? null : eventGetFilterParam|split(',') %}
+
+        {% set audienceGetFilterParam = craft.app.request.getParam('zielgruppe') ?? null %}
+        {% set audienceFilter = audienceGetFilterParam == null ? null : audienceGetFilterParam|split(',') %}
+
+        {% if audienceFilter is not empty %}
+            {% set audienceFilterCategories = craft.categories().group('targetAudiences')
+                .slug(audienceFilter)
+                .all() %}
+        {% else %}
+            {% set audienceFilterCategories = craft.categories().group('targetAudience').all() %}
+        {% endif %}
+
+
+        {# Put together queryOptions #}
+        {% set queryOptions = {
+            calendar: "activities",
+            rangeStart: rangeStartGetFilterParam,
+            rangeEnd: rangeEndGetFilterParam,
+            limit: "100",
+            slug: eventGetFilterParam,
+            relatedTo: audienceFilterCategories
+        } %}
+
+        {# Query events #}
+        {% set events = craft.calendar.events(queryOptions).all() %}
+
+        {# Variables for filter dropdowns #}
+        {% set filterableTargetAudiences = craft.categories().group('targetAudiences').orderBy('title ASC').all() %}
+
+        {% set groupedActivities = [] %}
+        {% set seen = [] %}
+        
+        {# Loop through the events and create an array with slug and title #}
+        {% for event in allEvents %}
+            {% set slug_title_pair = event.slug ~ '-' ~ event.title %}
+        
+            {# Only add if this slug-title pair has not been seen before #}
+            {% if slug_title_pair not in seen %}
+                {% set groupedActivities = groupedActivities | merge([{ 'slug': event.slug, 'title': event.title }]) %}
+                {% set seen = seen | merge([slug_title_pair]) %}
+            {% endif %}
+        {% endfor %}
+
+{% if craft.app.request.segments|first == 'api' %}
+    {% include '/components/activities-table.twig' %}
+{% else %}
+    <div class="container">
+        <section class="activities">
+            {% if craft.app.request.segments|first != 'aktivitaeten' %}
+                {% include '/components/activities-filter-text.twig' %}
+            {% else %}
+                {% include '/components/activities-filter.twig' %}
+            {% endif %}
+            <div id="activities-table">
+                {% include '/components/activities-table.twig' %}
+            </div>
+        </section>
+    </div>
+{% endif %}
+{#{% endcache %}#}

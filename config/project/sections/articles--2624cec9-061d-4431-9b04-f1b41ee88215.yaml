@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: articles
+name: News-Beiträge
+propagationMethod: all
+siteSettings:
+  8f7c0986-6e59-416f-a40c-3cafdb4e5953: # $SYS_NAME
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/post/detail
+    uriFormat: 'news/{slug}'
+type: channel

@@ -1,0 +1,25 @@
+<footer class="footer">
+    <div class="container">
+        <h6>{{ globalInformation.company }}</h6>
+        <div class="address">
+            <p class="address-information">
+                <span>{{ globalInformation.address }}</span>
+                <span class="footer-spacer">{{ globalInformation.zip }} {{ globalInformation.city }}</span>
+                <span class="footer-break"></span>
+                <a href="tel:+41{{ globalInformation.phone|slice(1)|replace(' ', '') }}" title="{{ globalInformation.phone }} anrufen">Telefon {{ globalInformation.phone }}</a>
+                <a class="footer-spacer" href="mailto:{{ globalInformation.eMail }}"
+                   title="E-Mail an {{ globalInformation.eMail }} senden">{{ globalInformation.eMail }}</a>
+            </p>
+        </div>
+
+        {% set nodes = craft.navigation.nodes('footer').all() %}
+
+        <ul class="footer-nav">
+            {% for node in nodes %}
+            <li>
+                {{ node.link }}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</footer>

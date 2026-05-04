@@ -1,0 +1,295 @@
+field: 87daceef-07b4-45bc-9502-7eada98bf283 # Content-Blöcke
+fieldLayouts:
+  6bf10f82-4b10-4b3d-8e1e-fedced51dfb1:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 38430b0e-4149-4c59-9289-9958508c2675 # Titel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 019a6713-a277-4d6d-bcf4-8a14591bc98a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 88b96b37-eff5-40b7-91cc-9dbd4f00da8f # Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9bcb42fc-da55-4e02-9dbb-fa2f96bf3e14
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 066820c4-c9b5-4088-b69f-e0e262e3ee63 # Button (optional)
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4615985e-0c3b-4da5-9f87-b332cd094843
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 2d9b9db6-d737-481f-9110-aaf8a4445697 # Box-Farbe
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9264586f-9a30-4b2e-99da-9321055b48cf
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 51d61b0e-ad07-442e-9443-00e469fd5f5b # Text-Ausrichtung
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 61b76804-e41b-4c76-93ac-04937487176a
+            userCondition: null
+            warning: null
+            width: 25
+        name: Content
+        uid: 72c6551e-b076-420f-8356-e07cba3ddec4
+        userCondition: null
+fields:
+  2d9b9db6-d737-481f-9110-aaf8a4445697: # Box-Farbe
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: boxFarbe
+    instructions: null
+    name: Box-Farbe
+    searchable: false
+    settings:
+      columnType: string
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Standard hell'
+            -
+              - value
+              - standardHell
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - 'Standard dunkel'
+            -
+              - value
+              - standardDunkel
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Trauung
+            -
+              - value
+              - trauung
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Taufe
+            -
+              - value
+              - taufe
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Abschied
+            -
+              - value
+              - abschied
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\RadioButtons
+  51d61b0e-ad07-442e-9443-00e469fd5f5b: # Text-Ausrichtung
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: textAlign
+    instructions: null
+    name: Text-Ausrichtung
+    searchable: false
+    settings:
+      columnType: string
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Links
+            -
+              - value
+              - left
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Mitte
+            -
+              - value
+              - center
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\RadioButtons
+  88b96b37-eff5-40b7-91cc-9dbd4f00da8f: # Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: true
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  38430b0e-4149-4c59-9289-9958508c2675: # Titel
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: titel
+    instructions: null
+    name: Titel
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  066820c4-c9b5-4088-b69f-e0e262e3ee63: # Button (optional)
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: button
+    instructions: null
+    name: 'Button (optional)'
+    searchable: false
+    settings:
+      allowCustomText: true
+      allowTarget: true
+      allowedLinkNames:
+        2: asset
+        3: entry
+        4: category
+        6: custom
+        7: email
+        8: tel
+        9: url
+      autoNoReferrer: true
+      customTextMaxLength: 0
+      customTextRequired: false
+      defaultLinkName: entry
+      defaultText: ''
+      enableAllLinkTypes: true
+      enableAriaLabel: false
+      enableElementCache: false
+      enableTitle: false
+      typeSettings:
+        asset:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        category:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        custom:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        email:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        entry:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        site:
+          enabled: false
+          sites: '*'
+        solspaceCalendar-event:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        tel:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        url:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        user:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+    translationKeyFormat: null
+    translationMethod: none
+    type: typedlinkfield\fields\LinkField
+handle: contentBox
+name: Content-Box
+sortOrder: 6

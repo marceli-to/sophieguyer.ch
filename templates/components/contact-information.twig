@@ -1,0 +1,15 @@
+<div class="container">
+    <section class="text">
+        <h2 class="h2">{{ globalInformation.company }}</h2>
+
+        <div class="redactor-text a-no-style">
+            <p>
+                {{ globalInformation.address|nl2br }}<br>
+                {{ globalInformation.zip }} {{ globalInformation.city }}<br>
+                <a href="mailto:{{ globalInformation.eMail }}" title="E-Mail an {{ globalInformation.eMail }} senden">{{ globalInformation.eMail }}</a>
+            </p>
+            <p>Tel.: <a href="tel:+41{{ globalInformation.phone|slice(1)|replace(' ', '') }}" title="{{ globalInformation.phone }} anrufen">{{ globalInformation.phone }}</a>
+            {% if globalInformation.fax %}<br>Fax: {{ globalInformation.fax }}{% endif %}</p>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,20 @@
+columnSuffix: xcyvpevb
+contentColumnType: smallint(2)
+fieldGroup: 52d467fa-059b-40cd-8b69-7814ffa994c7 # Globals
+handle: recentArticlesLimit
+instructions: 'Definiert, wie viele Beiträge pro Seite angezeigt werden sollen bevor eine neue Seite beginnt.'
+name: 'Blog-Beiträge pro Seite'
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: 4
+  max: 20
+  min: 2
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

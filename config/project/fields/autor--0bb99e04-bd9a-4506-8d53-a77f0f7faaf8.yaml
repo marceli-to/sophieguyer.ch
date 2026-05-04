@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 215008ac-e8a5-4256-9b36-889c61e69eff # Common
+handle: autor
+instructions: 'Bei internem Autor (Mitglied) bitte rechts bei den Beitrags-Einstellungen das Mitglied auswählen.'
+name: 'Externer Autor'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_autor}}'
+  maxBlocks: 1
+  minBlocks: 0
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

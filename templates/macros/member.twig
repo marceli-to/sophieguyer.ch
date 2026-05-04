@@ -1,0 +1,23 @@
+{% macro Member(member) %}
+    <article class="member">
+        <picture>
+            {% if member.memberImage|length %}
+                {% set profilePicture = member.memberImage.one().getUrl('square') %}
+            {% else %}
+                {% set profilePicture = '/assets/images/team-dummy.jpg' %}
+            {% endif %}
+            <img src="{{ profilePicture }}" alt="{{ member.firstname ~ ' ' ~ member.lastname }}">
+        </picture>
+        <div class="member-overlay member-overlay-theme-{{ member.theme }}">
+            <h3 class="h2">{{ member.firstname }}<br>{{ member.lastname }}</h3>
+            <p class="member-text">
+                <span>
+                    {{ member.position }}
+                </span>
+                {% if member.eMail %}
+                    <a href="mailto:{{ member.eMail }}" title="E-mail an {{ member.eMail }} senden">E-Mail</a>
+                {% endif %}
+            </p>
+        </div>
+    </article>
+{% endmacro %}

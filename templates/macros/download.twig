@@ -1,0 +1,11 @@
+{% macro Download(file, title) %}
+    <a href="{{ file }}" title="{{ title }}" target="_blank" class="button button-download">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31 29.999" xml:space="preserve">
+            <rect fill="currentColor" x="0" y="24.999" class="st0" width="31" height="5"/>
+            <polygon fill="currentColor" points="11.75,0 11.75,12.125 6.582,12.125 15.5,21.043 24.418,12.125 19.251,12.125 19.251,0 "/>
+        </svg>
+        <span class="button-text">
+            {{ title }}
+        </span>
+    </a>
+{% endmacro %}

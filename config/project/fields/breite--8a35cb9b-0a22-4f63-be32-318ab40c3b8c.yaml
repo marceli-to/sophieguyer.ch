@@ -1,0 +1,35 @@
+columnSuffix: qlzivvqp
+contentColumnType: string
+fieldGroup: b7747b1c-b7d1-4853-aecf-19b134ac11ae # Neo
+handle: breite
+instructions: 'Stimmungsbilder, die als Vollbildzeilen angezeigt werden sollen, müssen in guter Qualität vorliegen (Breite mindestens 1500px).'
+name: Breite
+searchable: false
+settings:
+  columnType: string
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Gleich wie Inhalt'
+        -
+          - value
+          - default
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Ganze Bildschirmbreite'
+        -
+          - value
+          - fullWidth
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

@@ -1,0 +1,74 @@
+image: registry.gitlab.com/webkeeper-org/work/devops/gitpod-container
+
+tasks:
+  - name: start
+    init: |
+      ddev debug download-images
+      helper prepare/existing
+    command: |
+      ddev start -y
+      ddev describe
+      ddev npm run dev
+  - name: terminal
+    openMode: split-left
+    command: |
+      gp ports await 5173 && sleep 1 && gp preview $(gp url 8080)
+      echo "The system is ready"
+
+vscode:
+  extensions:
+    # PHP extensions.
+    - felixfbecker.php-debug
+    - wongjn.php-sniffer
+    - neilbrayfield.php-docblocker
+    - bmewburn.vscode-intelephense-client
+
+    # Twig extensions.
+    - mblode.twig-language
+
+    # YAML language support
+    - redhat.vscode-yaml
+
+    # Bash extensions.
+    - timonwong.shellcheck
+    - rogalmic.bash-debug
+
+ports:
+  # Ignore direct-build https port
+  - port: 2222
+    onOpen: ignore
+  - port: 3306
+    onOpen: ignore
+  # Used by projector
+  - port: 6942
+    onOpen: ignore
+  # Direct-connect ddev-webserver port that is the main port
+  - port: 8080
+    onOpen: ignore
+  # Currently un-notified and unsupported mailhog http port
+  - port: 8025
+    onOpen: ignore
+  # Currently un-notified and unsupported mailhog https port
+  - port: 8026
+    onOpen: ignore
+  # Currently un-notified and unsupported phpmyadmin http port
+  - port: 8036
+    onOpen: ignore
+  # Currently un-notified and unsupported phpmyadmin https port
+  - port: 8037
+    onOpen: ignore
+  # router http port that we're ignoring.
+  - port: 8888
+    onOpen: ignore
+  # router https port that we're ignoring.
+  - port: 8889
+    onOpen: ignore
+  # xdebug port
+  - port: 9000
+    onOpen: ignore
+  # projector port
+  - port: 9999
+    # TEST Vite (src https://github.com/gitpod-io/devx-community/blob/main/.gitpod.yml)
+  - port: 5173
+    onOpen: ignore
+    visibility: public

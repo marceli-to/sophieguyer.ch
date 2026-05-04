@@ -1,0 +1,16 @@
+{% import '/macros/header-image.twig' as HeaderImage %}
+
+{% extends '/partials/layout.twig' %}
+{% block content %}
+    {% include '/partials/navigation.twig' %}
+
+    {{ HeaderImage.HeaderImage(entry.headerImage) }}
+
+    <main  class="animate-elements">
+        {% include "/components/main-title.twig" %}
+        {% include '/components/neo-content.twig' %}
+    </main>
+
+    {% include '/partials/footer.twig' %}
+
+{% endblock %}

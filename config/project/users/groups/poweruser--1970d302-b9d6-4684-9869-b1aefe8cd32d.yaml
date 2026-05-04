@@ -1,0 +1,153 @@
+description: null
+handle: poweruser
+name: Poweruser
+permissions:
+  - accesscp
+  - accessplugin-calendar
+  - accessplugin-formie
+  - accessplugin-navigation
+  - 'createentries:0a04dc24-5770-46b1-a339-d12721a592ce' # Aktivitäten-Seiten
+  - 'createentries:2624cec9-061d-4431-9b04-f1b41ee88215' # News-Beiträge
+  - 'createentries:4554c04a-40cb-459e-8db6-4f02dea5613c' # Rückblicke
+  - 'createentries:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Teammitglieder
+  - 'createentries:ad4fec4e-bcc8-46fa-88da-93835e93338a' # Sophie Guyer
+  - 'createfolders:660bdc7d-598b-4ca2-91f2-4262a2440f8b' # Interne Dateien
+  - 'createfolders:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'deleteassets:660bdc7d-598b-4ca2-91f2-4262a2440f8b' # Interne Dateien
+  - 'deleteassets:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'deletecategories:4cd7bb54-2611-4ca7-819c-7c24b95476f2' # Lokalitäten
+  - 'deletecategories:af6cb2c5-7d46-494b-b7c3-cfc1cea57b3e' # Zielgruppen
+  - 'deleteentries:0a04dc24-5770-46b1-a339-d12721a592ce' # Aktivitäten-Seiten
+  - 'deleteentries:2624cec9-061d-4431-9b04-f1b41ee88215' # News-Beiträge
+  - 'deleteentries:4554c04a-40cb-459e-8db6-4f02dea5613c' # Rückblicke
+  - 'deleteentries:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Teammitglieder
+  - 'deleteentries:ad4fec4e-bcc8-46fa-88da-93835e93338a' # Sophie Guyer
+  - 'deletepeerassets:660bdc7d-598b-4ca2-91f2-4262a2440f8b' # Interne Dateien
+  - 'deletepeerassets:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'deletepeercategorydrafts:4cd7bb54-2611-4ca7-819c-7c24b95476f2' # Lokalitäten
+  - 'deletepeercategorydrafts:af6cb2c5-7d46-494b-b7c3-cfc1cea57b3e' # Zielgruppen
+  - 'deletepeerentries:0a04dc24-5770-46b1-a339-d12721a592ce' # Aktivitäten-Seiten
+  - 'deletepeerentries:2624cec9-061d-4431-9b04-f1b41ee88215' # News-Beiträge
+  - 'deletepeerentries:4554c04a-40cb-459e-8db6-4f02dea5613c' # Rückblicke
+  - 'deletepeerentries:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Teammitglieder
+  - 'deletepeerentries:ad4fec4e-bcc8-46fa-88da-93835e93338a' # Sophie Guyer
+  - 'deletepeerentrydrafts:0a04dc24-5770-46b1-a339-d12721a592ce' # Aktivitäten-Seiten
+  - 'deletepeerentrydrafts:1552cba9-27ff-4916-a33d-83229caf41a2' # Impressum
+  - 'deletepeerentrydrafts:2624cec9-061d-4431-9b04-f1b41ee88215' # News-Beiträge
+  - 'deletepeerentrydrafts:2e17648f-09e8-4b43-88a1-92b246925e4d' # Hotellerie
+  - 'deletepeerentrydrafts:3928f513-4b1e-4af8-ace9-3bbe20b0c4e9' # News
+  - 'deletepeerentrydrafts:4110572d-1edb-4476-848c-56fc9445567e' # Spitex
+  - 'deletepeerentrydrafts:4554c04a-40cb-459e-8db6-4f02dea5613c' # Rückblicke
+  - 'deletepeerentrydrafts:6d064992-c34b-4ef0-9b87-cb1b661bf7df' # Datenschutz
+  - 'deletepeerentrydrafts:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Teammitglieder
+  - 'deletepeerentrydrafts:acea00b9-5da4-42e0-bf6d-51660c181f40' # Aktivitäten
+  - 'deletepeerentrydrafts:ad4fec4e-bcc8-46fa-88da-93835e93338a' # Sophie Guyer
+  - 'deletepeerentrydrafts:d264285e-fbff-447b-8a82-d6ff1f72bc49' # Kontakt
+  - 'deletepeerentrydrafts:d68fa7b1-f9da-4f43-b474-be220edc9de3' # Home
+  - 'deletepeerentrydrafts:f3ba98eb-c9b1-4d4e-937c-65260a0ca889' # Wohnen
+  - 'editglobalset:13dab699-ff85-46be-aeca-ccf3161c7a2e' # Einstellungen
+  - 'editglobalset:161ea3a8-41c3-4cd1-944c-a418ed89f7b7' # Header Call-to-Action Kreis
+  - 'editglobalset:8a3c23f8-0bc3-4c8c-bfc5-7c2e2f5f4c19' # Allgemein
+  - 'editimages:660bdc7d-598b-4ca2-91f2-4262a2440f8b' # Interne Dateien
+  - 'editimages:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'editpeerimages:660bdc7d-598b-4ca2-91f2-4262a2440f8b' # Interne Dateien
+  - 'editpeerimages:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - formie-createforms
+  - formie-deleteforms
+  - formie-editforms
+  - formie-editsubmissions
+  - formie-manageformappearance
+  - formie-manageformbehavior
+  - formie-managenotifications
+  - formie-managenotificationsadvanced
+  - formie-viewforms
+  - formie-viewsentnotifications
+  - formie-viewsubmissions
+  - 'navigation-managenav:d96189f8-5ee1-420a-855b-aa2b2eef7409' # Navigation
+  - 'navigation-managenav:d9e6bfc0-4d95-4b96-8e79-b3e8e480d33b' # Footer
+  - 'replacefiles:660bdc7d-598b-4ca2-91f2-4262a2440f8b' # Interne Dateien
+  - 'replacefiles:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'replacepeerfiles:660bdc7d-598b-4ca2-91f2-4262a2440f8b' # Interne Dateien
+  - 'replacepeerfiles:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'saveassets:660bdc7d-598b-4ca2-91f2-4262a2440f8b' # Interne Dateien
+  - 'saveassets:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'savecategories:4cd7bb54-2611-4ca7-819c-7c24b95476f2' # Lokalitäten
+  - 'savecategories:af6cb2c5-7d46-494b-b7c3-cfc1cea57b3e' # Zielgruppen
+  - 'saveentries:0a04dc24-5770-46b1-a339-d12721a592ce' # Aktivitäten-Seiten
+  - 'saveentries:1552cba9-27ff-4916-a33d-83229caf41a2' # Impressum
+  - 'saveentries:2624cec9-061d-4431-9b04-f1b41ee88215' # News-Beiträge
+  - 'saveentries:2e17648f-09e8-4b43-88a1-92b246925e4d' # Hotellerie
+  - 'saveentries:3928f513-4b1e-4af8-ace9-3bbe20b0c4e9' # News
+  - 'saveentries:4110572d-1edb-4476-848c-56fc9445567e' # Spitex
+  - 'saveentries:4554c04a-40cb-459e-8db6-4f02dea5613c' # Rückblicke
+  - 'saveentries:6d064992-c34b-4ef0-9b87-cb1b661bf7df' # Datenschutz
+  - 'saveentries:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Teammitglieder
+  - 'saveentries:acea00b9-5da4-42e0-bf6d-51660c181f40' # Aktivitäten
+  - 'saveentries:ad4fec4e-bcc8-46fa-88da-93835e93338a' # Sophie Guyer
+  - 'saveentries:d264285e-fbff-447b-8a82-d6ff1f72bc49' # Kontakt
+  - 'saveentries:d68fa7b1-f9da-4f43-b474-be220edc9de3' # Home
+  - 'saveentries:f3ba98eb-c9b1-4d4e-937c-65260a0ca889' # Wohnen
+  - 'savepeerassets:660bdc7d-598b-4ca2-91f2-4262a2440f8b' # Interne Dateien
+  - 'savepeerassets:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'savepeercategorydrafts:4cd7bb54-2611-4ca7-819c-7c24b95476f2' # Lokalitäten
+  - 'savepeercategorydrafts:af6cb2c5-7d46-494b-b7c3-cfc1cea57b3e' # Zielgruppen
+  - 'savepeerentries:0a04dc24-5770-46b1-a339-d12721a592ce' # Aktivitäten-Seiten
+  - 'savepeerentries:2624cec9-061d-4431-9b04-f1b41ee88215' # News-Beiträge
+  - 'savepeerentries:4554c04a-40cb-459e-8db6-4f02dea5613c' # Rückblicke
+  - 'savepeerentries:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Teammitglieder
+  - 'savepeerentries:ad4fec4e-bcc8-46fa-88da-93835e93338a' # Sophie Guyer
+  - 'savepeerentrydrafts:0a04dc24-5770-46b1-a339-d12721a592ce' # Aktivitäten-Seiten
+  - 'savepeerentrydrafts:1552cba9-27ff-4916-a33d-83229caf41a2' # Impressum
+  - 'savepeerentrydrafts:2624cec9-061d-4431-9b04-f1b41ee88215' # News-Beiträge
+  - 'savepeerentrydrafts:2e17648f-09e8-4b43-88a1-92b246925e4d' # Hotellerie
+  - 'savepeerentrydrafts:3928f513-4b1e-4af8-ace9-3bbe20b0c4e9' # News
+  - 'savepeerentrydrafts:4110572d-1edb-4476-848c-56fc9445567e' # Spitex
+  - 'savepeerentrydrafts:4554c04a-40cb-459e-8db6-4f02dea5613c' # Rückblicke
+  - 'savepeerentrydrafts:6d064992-c34b-4ef0-9b87-cb1b661bf7df' # Datenschutz
+  - 'savepeerentrydrafts:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Teammitglieder
+  - 'savepeerentrydrafts:acea00b9-5da4-42e0-bf6d-51660c181f40' # Aktivitäten
+  - 'savepeerentrydrafts:ad4fec4e-bcc8-46fa-88da-93835e93338a' # Sophie Guyer
+  - 'savepeerentrydrafts:d264285e-fbff-447b-8a82-d6ff1f72bc49' # Kontakt
+  - 'savepeerentrydrafts:d68fa7b1-f9da-4f43-b474-be220edc9de3' # Home
+  - 'savepeerentrydrafts:f3ba98eb-c9b1-4d4e-937c-65260a0ca889' # Wohnen
+  - 'viewassets:660bdc7d-598b-4ca2-91f2-4262a2440f8b' # Interne Dateien
+  - 'viewassets:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'viewcategories:4cd7bb54-2611-4ca7-819c-7c24b95476f2' # Lokalitäten
+  - 'viewcategories:af6cb2c5-7d46-494b-b7c3-cfc1cea57b3e' # Zielgruppen
+  - 'viewentries:0a04dc24-5770-46b1-a339-d12721a592ce' # Aktivitäten-Seiten
+  - 'viewentries:1552cba9-27ff-4916-a33d-83229caf41a2' # Impressum
+  - 'viewentries:2624cec9-061d-4431-9b04-f1b41ee88215' # News-Beiträge
+  - 'viewentries:2e17648f-09e8-4b43-88a1-92b246925e4d' # Hotellerie
+  - 'viewentries:3928f513-4b1e-4af8-ace9-3bbe20b0c4e9' # News
+  - 'viewentries:4110572d-1edb-4476-848c-56fc9445567e' # Spitex
+  - 'viewentries:4554c04a-40cb-459e-8db6-4f02dea5613c' # Rückblicke
+  - 'viewentries:6d064992-c34b-4ef0-9b87-cb1b661bf7df' # Datenschutz
+  - 'viewentries:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Teammitglieder
+  - 'viewentries:acea00b9-5da4-42e0-bf6d-51660c181f40' # Aktivitäten
+  - 'viewentries:ad4fec4e-bcc8-46fa-88da-93835e93338a' # Sophie Guyer
+  - 'viewentries:d264285e-fbff-447b-8a82-d6ff1f72bc49' # Kontakt
+  - 'viewentries:d68fa7b1-f9da-4f43-b474-be220edc9de3' # Home
+  - 'viewentries:f3ba98eb-c9b1-4d4e-937c-65260a0ca889' # Wohnen
+  - 'viewpeerassets:660bdc7d-598b-4ca2-91f2-4262a2440f8b' # Interne Dateien
+  - 'viewpeerassets:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'viewpeercategorydrafts:4cd7bb54-2611-4ca7-819c-7c24b95476f2' # Lokalitäten
+  - 'viewpeercategorydrafts:af6cb2c5-7d46-494b-b7c3-cfc1cea57b3e' # Zielgruppen
+  - 'viewpeerentries:0a04dc24-5770-46b1-a339-d12721a592ce' # Aktivitäten-Seiten
+  - 'viewpeerentries:2624cec9-061d-4431-9b04-f1b41ee88215' # News-Beiträge
+  - 'viewpeerentries:4554c04a-40cb-459e-8db6-4f02dea5613c' # Rückblicke
+  - 'viewpeerentries:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Teammitglieder
+  - 'viewpeerentries:ad4fec4e-bcc8-46fa-88da-93835e93338a' # Sophie Guyer
+  - 'viewpeerentrydrafts:0a04dc24-5770-46b1-a339-d12721a592ce' # Aktivitäten-Seiten
+  - 'viewpeerentrydrafts:1552cba9-27ff-4916-a33d-83229caf41a2' # Impressum
+  - 'viewpeerentrydrafts:2624cec9-061d-4431-9b04-f1b41ee88215' # News-Beiträge
+  - 'viewpeerentrydrafts:2e17648f-09e8-4b43-88a1-92b246925e4d' # Hotellerie
+  - 'viewpeerentrydrafts:3928f513-4b1e-4af8-ace9-3bbe20b0c4e9' # News
+  - 'viewpeerentrydrafts:4110572d-1edb-4476-848c-56fc9445567e' # Spitex
+  - 'viewpeerentrydrafts:4554c04a-40cb-459e-8db6-4f02dea5613c' # Rückblicke
+  - 'viewpeerentrydrafts:6d064992-c34b-4ef0-9b87-cb1b661bf7df' # Datenschutz
+  - 'viewpeerentrydrafts:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Teammitglieder
+  - 'viewpeerentrydrafts:acea00b9-5da4-42e0-bf6d-51660c181f40' # Aktivitäten
+  - 'viewpeerentrydrafts:ad4fec4e-bcc8-46fa-88da-93835e93338a' # Sophie Guyer
+  - 'viewpeerentrydrafts:d264285e-fbff-447b-8a82-d6ff1f72bc49' # Kontakt
+  - 'viewpeerentrydrafts:d68fa7b1-f9da-4f43-b474-be220edc9de3' # Home
+  - 'viewpeerentrydrafts:f3ba98eb-c9b1-4d4e-937c-65260a0ca889' # Wohnen

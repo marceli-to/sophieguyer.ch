@@ -1,0 +1,23 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: a79920c0-801d-495a-a41f-36add74f5319 # News&Ratgeber
+handle: art
+instructions: null
+name: Art
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: true
+  maxRelations: null
+  minRelations: null
+  selectionLabel: 'Art auswählen'
+  showSiteMenu: false
+  source: 'group:b7b4ad11-a9d5-4415-b0b6-7586b947c30a'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

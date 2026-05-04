@@ -1,0 +1,15 @@
+{% import '/macros/activities-filter-convert-text.twig' as activitiesFilterHelper %}
+<section class="activities-filters-text">
+    <div class="activities-filter-text">
+        <span class="label">Zeitraum:</span>
+        <span class="value">{{ craft.app.request.getParam('date') ?? (rangeStartGetFilterParam|date('d.m.Y') ~ ' - ' ~ rangeEndGetFilterParam|date('d.m.Y')) }}</span>
+    </div>
+    <div class="activities-filter-text">
+        <span class="label">Aktivität:</span>
+        <span class="value">{{ activitiesFilterHelper.activitiesFilterConvertSlugToTitle(groupedActivities, eventGetFilterParam) }}</span>
+    </div>
+    <div class="activities-filter-text">
+        <span class="label">Zielgruppe:</span>
+        <span class="value">{{ activitiesFilterHelper.activitiesFilterConvertSlugToTitle(filterableTargetAudiences, audienceFilter) }}</span>
+    </div>
+</section>

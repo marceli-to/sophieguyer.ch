@@ -1,0 +1,47 @@
+defaultPlacement: end
+fieldLayouts:
+  d61b581c-f0ff-4847-bdf1-b19f41fd68f6:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: Lokalität
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 8dd08993-7755-45dd-9949-3fc3f767b2b8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: b732ece0-7298-4bd2-8374-f9d1efb643cf
+        userCondition: null
+handle: locations
+name: Lokalitäten
+siteSettings:
+  8f7c0986-6e59-416f-a40c-3cafdb4e5953: # $SYS_NAME
+    hasUrls: true
+    template: null
+    uriFormat: 'lokalitaeten/{slug}'
+structure:
+  maxLevels: 1
+  uid: 2e52d175-82b8-4a3e-bf92-dfcdd26b86f8

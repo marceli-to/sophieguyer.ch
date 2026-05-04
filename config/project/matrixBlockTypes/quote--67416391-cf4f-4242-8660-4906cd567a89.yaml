@@ -1,0 +1,78 @@
+field: 87daceef-07b4-45bc-9502-7eada98bf283 # Content-Blöcke
+fieldLayouts:
+  602a7683-f1ed-41d1-b376-c1a97d2ef5e9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: daf27686-f50f-442f-b5a6-1669b5259c0e # Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f3cfdb23-9c0e-45e0-a982-2a162816ab20
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 40f09193-87cb-4bd1-9930-76c625d38f47 # Quelle / Author
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4be853bf-9538-4f93-922f-c02822a137a7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 2c904d97-0e39-4d7a-80ab-759c10811a2e
+        userCondition: null
+fields:
+  40f09193-87cb-4bd1-9930-76c625d38f47: # Quelle / Author
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: quelleAuthor
+    instructions: null
+    name: 'Quelle / Author'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  daf27686-f50f-442f-b5a6-1669b5259c0e: # Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: quote
+name: Zitat
+sortOrder: 2

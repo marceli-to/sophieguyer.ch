@@ -1,0 +1,12 @@
+{% import '/macros/article-box.twig' as ArticleBox %}
+
+{% set recentArticlesLimit = globalSettings.recentArticlesLimit ?? 0 %}
+{% set articles = craft.entries().section('articles').limit(recentArticlesLimit).all() %}
+
+<div class="container">
+    <section class="recent-articles">
+        {% for article in articles %}
+            {{ ArticleBox.ArticleBox(article) }}
+        {% endfor %}
+    </section>
+</div>

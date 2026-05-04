@@ -1,0 +1,239 @@
+data:
+  dataRetention: forever
+  dataRetentionValue: null
+  fileUploadsAction: retain
+  notifications:
+    -
+      attachAssets: null
+      attachFiles: true
+      attachPdf: false
+      bcc: null
+      cc: null
+      conditions: '{"sendRule":"send","conditionRule":"all","conditions":[]}'
+      content: '[{"type":"paragraph","content":[{"type":"text","text":"Ein Besucher hat das Formular \""},{"type":"variableTag","attrs":{"label":"Form Name","value":"{formName}"}},{"type":"text","text":"\" am "},{"type":"variableTag","attrs":{"label":"Datum (TT/MM/JJJJ)","value":"{dateInt}"}},{"type":"text","text":" um "},{"type":"variableTag","attrs":{"label":"Zeit (24 Stunden)","value":"{time24}"}},{"type":"text","text":" Uhr abgeschickt."}]},{"type":"paragraph","content":[{"type":"text","text":"Folgende Daten wurden eingetragen:"}]},{"type":"paragraph","content":[{"type":"variableTag","attrs":{"label":"All Form Fields","value":"{allFields}"}}]}]'
+      enableConditions: false
+      enabled: true
+      formId: null
+      from: null
+      fromName: null
+      id: stencil66c2752b12c4c
+      name: 'Interne Benachrichtigung'
+      pdfTemplateId: null
+      recipients: email
+      replyTo: '{field.emailAddress}'
+      replyToName: null
+      subject: 'Neue Nachricht aus Formular " {formName} "'
+      templateId: null
+      to: '{systemEmail}'
+      toConditions: '{"toRecipients":[]}'
+      uid: null
+    -
+      attachFiles: true
+      attachPdf: false
+      bcc: null
+      cc: null
+      conditions: '{"sendRule":"send","conditionRule":"all","conditions":[]}'
+      content: '[{"type":"paragraph","content":[{"type":"text","text":"Vielen Dank, dass Sie sich für die Veranstaltung "},{"type":"variableTag","attrs":{"label":"Formularname","value":"{formName}"}},{"type":"text","text":" angemeldet haben."}]},{"type":"paragraph","content":[{"type":"text","text":"Folgende Angaben haben Sie uns am "},{"type":"variableTag","attrs":{"label":"Datum (TT/MM/JJJJ)","value":"{dateInt}"}},{"type":"text","text":" um "},{"type":"variableTag","attrs":{"label":"Zeit (24 Stunden)","value":"{time24}"}},{"type":"text","text":" Uhr übermittelt:"}]},{"type":"paragraph","content":[{"type":"variableTag","attrs":{"label":"All Form Fields","value":"{allFields}"}}]},{"type":"paragraph","content":[{"type":"text","text":"Freundliche Grüsse"}]},{"type":"paragraph","content":[{"type":"text","text":"Stiftung Alterszentrum Sophie Guyer"}]},{"type":"paragraph","content":[{"type":"text","text":"Zelglistrasse 7"},{"type":"hard_break"},{"type":"text","text":"8330 Pfäffikon ZH"}]}]'
+      enableConditions: false
+      enabled: true
+      formId: null
+      from: null
+      fromName: null
+      id: stencil66c2752b12c4d
+      name: 'Bestätigung Absender'
+      pdfTemplateId: ''
+      recipients: email
+      replyTo: null
+      replyToName: null
+      subject: 'Bestätigung Anmeldung'
+      templateId: ''
+      to: '{field.emailAddress}'
+      toConditions: '{"toRecipients":[]}'
+      uid: null
+  pages:
+    -
+      id: new1272610411
+      label: 'Seite 1'
+      notificationFlag: true
+      rows:
+        -
+          fields:
+            -
+              brandNewField: false
+              columnWidth: 12
+              handle: yourName
+              hasLabel: true
+              id: new7715-7348
+              label: Name
+              settings:
+                conditions: '{"showRule":"show","conditionRule":"all","conditions":[]}'
+                firstNameCollapsed: false
+                firstNameDefaultValue: ''
+                firstNameEnabled: true
+                firstNameLabel: Vorname
+                firstNamePlaceholder: ''
+                firstNameRequired: true
+                handle: yourName
+                instructions: ''
+                instructionsPosition: verbb\formie\positions\FieldsetStart
+                label: Name
+                labelPosition: verbb\formie\positions\Hidden
+                lastNameCollapsed: false
+                lastNameDefaultValue: ''
+                lastNameEnabled: true
+                lastNameLabel: Nachname
+                lastNamePlaceholder: ''
+                lastNameRequired: true
+                limitType: characters
+                middleNameCollapsed: true
+                middleNameDefaultValue: ''
+                middleNameEnabled: false
+                middleNameLabel: 'Middle Name'
+                placeholder: 'Your name'
+                prefixCollapsed: true
+                prefixDefaultValue: ''
+                prefixEnabled: false
+                prefixLabel: Prefix
+                subfieldLabelPosition: ''
+                useMultipleFields: true
+                visibility: ''
+              type: verbb\formie\fields\formfields\Name
+              vid: new6866-444
+          id: new8990-9934
+        -
+          fields:
+            -
+              brandNewField: false
+              columnWidth: 6
+              handle: anzahlBegleitpersonen
+              hasLabel: true
+              id: new43550040
+              label: 'Anzahl Begleitpersonen'
+              settings:
+                conditions: '{"showRule":"show","conditionRule":"all","conditions":[]}'
+                handle: anzahlBegleitpersonen
+                instructionsPosition: ''
+                label: 'Anzahl Begleitpersonen'
+                labelPosition: ''
+                limit: false
+                limitType: characters
+                required: true
+                visibility: ''
+              type: verbb\formie\fields\formfields\Number
+              vid: new9591-6438
+            -
+              brandNewField: false
+              columnWidth: 12
+              handle: emailAddress
+              hasLabel: true
+              id: new6482-9528
+              label: E-Mail
+              settings:
+                conditions: '{"showRule":"show","conditionRule":"all","conditions":[]}'
+                handle: emailAddress
+                instructions: ''
+                instructionsPosition: ''
+                label: E-Mail
+                labelPosition: ''
+                limitType: characters
+                placeholder: ''
+                required: true
+                visibility: ''
+              type: verbb\formie\fields\formfields\Email
+              vid: new6637-7078
+          id: new9524-8509
+        -
+          fields:
+            -
+              brandNewField: false
+              columnWidth: 12
+              handle: message
+              hasLabel: true
+              id: new982-7322
+              label: Bemerkungen
+              settings:
+                conditions: '{"showRule":"show","conditionRule":"all","conditions":[]}'
+                handle: message
+                instructions: ''
+                instructionsPosition: ''
+                label: Bemerkungen
+                labelPosition: ''
+                limitType: characters
+                placeholder: ''
+                required: false
+                visibility: ''
+              type: verbb\formie\fields\formfields\MultiLineText
+              vid: new5240-6409
+          id: new2177-9685
+      settings:
+        backButtonLabel: Back
+        buttonsPosition: left
+        jsGtmEventOptions:
+          -
+            label: event
+            value: formPageSubmission
+          -
+            label: formId
+            value: eventRegistrationForm
+          -
+            label: pageId
+            value: new1272610411
+          -
+            label: pageIndex
+            value: 0
+        label: 'Seite 1'
+        nextButtonConditions: '{"showRule":"show","conditionRule":"all","conditions":[]}'
+        pageConditions: '{"showRule":"show","conditionRule":"all","conditions":[]}'
+        showBackButton: false
+        submitButtonLabel: Anmelden
+      sortOrder: 0
+  settings:
+    collectIp: false
+    collectUser: false
+    dataRetention: null
+    dataRetentionValue: null
+    defaultEmailTemplateId: null
+    defaultInstructionsPosition: verbb\formie\positions\AboveInput
+    defaultLabelPosition: verbb\formie\positions\AboveInput
+    disableCaptchas: false
+    displayCurrentPageTitle: false
+    displayFormTitle: false
+    displayPageProgress: false
+    displayPageTabs: false
+    errorMessage: '[{"type":"paragraph","content":[{"type":"text","text":"Die Übermittlung konnte aufgrund von Fehlern nicht gespeichert werden."}]}]'
+    errorMessagePosition: top-form
+    fileUploadsAction: null
+    limitSubmissions: false
+    limitSubmissionsMessage: null
+    limitSubmissionsNumber: null
+    limitSubmissionsType: null
+    loadingIndicator: spinner
+    loadingIndicatorText: null
+    pageRedirectUrl: null
+    progressPosition: end
+    redirectUrl: null
+    requireUser: false
+    requireUserMessage: null
+    scheduleForm: false
+    scheduleFormEnd: null
+    scheduleFormExpiredMessage: null
+    scheduleFormPendingMessage: null
+    scheduleFormStart: null
+    scrollToTop: true
+    submissionTitleFormat: '{timestamp}'
+    submitAction: message
+    submitActionFormHide: false
+    submitActionMessage: '[{"type":"paragraph","content":[{"type":"text","text":"Vielen Dank, dass Sie uns kontaktiert haben! Unser Team wird Ihre Nachricht in Kürze bearbeiten und sich bei Bedarf mit Ihnen in Verbindung setzen."}]}]'
+    submitActionMessagePosition: top-form
+    submitActionMessageTimeout: null
+    submitActionTab: null
+    submitActionUrl: null
+    submitMethod: ajax
+    validationOnFocus: true
+    validationOnSubmit: true
+  userDeletedAction: retain
+defaultStatus: bd6c759f-75ca-4395-9bc0-363ef33b8192 # New
+handle: eventRegistrationForm
+name: 'Vorlage für Veranstaltung'
+submitActionEntry: null
+template: null

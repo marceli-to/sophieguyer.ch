@@ -1,0 +1,72 @@
+fieldLayouts:
+  7df0865d-d197-4871-8045-1f980ed17a37:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 31e8682b-53d0-4efb-9975-e0387a89c0fd # Versandbestätigung Kontaktformular
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b959ac86-02d6-419a-9830-a827a60be028
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b08b0017-16d9-4d2b-a160-d3c050b67019 # Text für "Keine Resultate gefunden"
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e5566f98-6541-4f98-9412-e38c14fde4c6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e775cbc3-a26c-4a96-ba77-17fe480404fe # Blog-Beiträge pro Seite
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5aa4ecb7-7425-4823-a03f-64b3ff4caaed
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1fa28b6b-69c6-4a6c-ba98-0ef58909b46e # Anzahl Beiträge
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0eb30c75-3b9f-4c21-bd7d-c080b564dcf9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c9248860-f161-4265-8165-0a0367e7c357 # Kalender Ausblick
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b7701a5f-520d-4489-8be7-0bb5f5513af0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Einstellungen
+        uid: 5bf02543-8f7c-4f3f-ae4b-9d6fe6f7f6ac
+        userCondition: null
+handle: globalSettings
+name: Einstellungen
+sortOrder: 3

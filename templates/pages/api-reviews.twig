@@ -1,0 +1,16 @@
+{% if craft.app.config.env == 'dev' %}
+    {% header "Access-Control-Allow-Origin: *" %}
+{% endif %}
+
+{% import '/macros/review-box.twig' as ReviewBox %}
+
+{% set offset = craft.app.request.getParam('offset') ?? 0 %}
+{% set count = craft.app.request.getParam('count') ?? globalSettings.countDefaultArticles %}
+{% set reviews = craft.entries().section('reviews').limit(count).offset(offset).all() %}
+{% set remaining = craft.entries().section('reviews').count() - offset - reviews|length %}
+
+<div data-hasmore="{{ remaining > 0 ? 'true' : 'false' }}">
+    {% for review in reviews %}
+        {{ ReviewBox.ReviewBox(review) }}
+    {% endfor %}
+</div>

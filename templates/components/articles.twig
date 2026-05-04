@@ -1,0 +1,25 @@
+{% import '/macros/article-box.twig' as ArticleBox %}
+
+{% set countDefaultArticles = globalSettings.countDefaultArticles %}
+{% set articles = craft.entries().section('articles').limit(countDefaultArticles).all() %}
+{% set remaining = craft.entries().section('articles').count() - countDefaultArticles %}
+
+<div class="container">
+    <section class="articles">
+        <div class="articles-container" id="load-more-container">
+            {% for article in articles %}
+                {{ ArticleBox.ArticleBox(article) }}
+            {% endfor %}
+        </div>
+        {% if remaining > 0 %}
+        <div class="load-more">
+            <button type="button" class="button button-blank" id="load-more" data-url="/api/news" data-count="{{ countDefaultArticles }}">
+                <span class="h4">ältere Beiträge anzeigen</span>
+                <img src="/assets/icons/chevron-down.svg" class="icon" alt="">
+            </button>
+        </div>
+        {% endif %}
+    </section>
+    <script src="/js/modules/load-more.min.js"></script>
+</div>
+

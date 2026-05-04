@@ -1,0 +1,35 @@
+columnSuffix: zhefckbu
+contentColumnType: string
+fieldGroup: b7747b1c-b7d1-4853-aecf-19b134ac11ae # Neo
+handle: breiteBildBox
+instructions: null
+name: Breite
+searchable: false
+settings:
+  columnType: string
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 100%
+        -
+          - value
+          - '100'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 50%
+        -
+          - value
+          - '50'
+        -
+          - default
+          - '1'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

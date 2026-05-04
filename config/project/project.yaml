@@ -1,0 +1,562 @@
+dateModified: 1743082715
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      tableAttributes:
+        - section
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      heading: Hauptseiten
+      type: heading
+    -
+      key: 'single:d68fa7b1-f9da-4f43-b474-be220edc9de3' # Home
+      type: native
+    -
+      key: 'section:ad4fec4e-bcc8-46fa-88da-93835e93338a' # Sophie Guyer
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      key: 'single:f3ba98eb-c9b1-4d4e-937c-65260a0ca889' # Wohnen
+      type: native
+    -
+      key: 'single:4110572d-1edb-4476-848c-56fc9445567e' # Spitex
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      key: 'single:2e17648f-09e8-4b43-88a1-92b246925e4d' # Hotellerie
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      key: 'single:acea00b9-5da4-42e0-bf6d-51660c181f40' # Aktivitäten
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      key: 'single:3928f513-4b1e-4af8-ace9-3bbe20b0c4e9' # News
+      type: native
+    -
+      key: 'single:d264285e-fbff-447b-8a82-d6ff1f72bc49' # Kontakt
+      type: native
+    -
+      heading: Module
+      type: heading
+    -
+      key: 'section:2624cec9-061d-4431-9b04-f1b41ee88215' # News-Beiträge
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      key: 'section:4554c04a-40cb-459e-8db6-4f02dea5613c' # Rückblicke
+      type: native
+    -
+      key: 'section:0a04dc24-5770-46b1-a339-d12721a592ce' # Aktivitäten-Seiten
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      key: 'section:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Teammitglieder
+      type: native
+    -
+      heading: NEBENSEITEN
+      type: heading
+    -
+      key: 'single:6d064992-c34b-4ef0-9b87-cb1b661bf7df' # Datenschutz
+      type: native
+    -
+      key: 'single:1552cba9-27ff-4916-a33d-83229caf41a2' # Impressum
+      type: native
+email:
+  fromEmail: $FROM_EMAIL
+  fromName: $FROM_NAME
+  replyToEmail: null
+  template: ''
+  transportSettings:
+    command: ''
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  interneDateien:
+    hasUrls: false
+    name: 'Interne Dateien'
+    settings:
+      addSubfolderToRootUrl: true
+      bucket: $OBJECT_STORAGE_BUCKET
+      endpoint: $OBJECT_STORAGE_SERVER
+      expires: ''
+      keyId: $OBJECT_STORAGE_KEY
+      makeUploadsPublic: true
+      region: $OBJECT_STORAGE_REGION
+      secret: $OBJECT_STORAGE_SECRET
+      subfolder: intern
+    type: fortrabbit\ObjectStorage\Fs
+    url: null
+  objectstorage:
+    hasUrls: true
+    name: Object-Storage
+    settings:
+      addSubfolderToRootUrl: true
+      bucket: $OBJECT_STORAGE_BUCKET
+      endpoint: $OBJECT_STORAGE_SERVER
+      expires: ''
+      keyId: $OBJECT_STORAGE_KEY
+      makeUploadsPublic: true
+      region: $OBJECT_STORAGE_REGION
+      secret: $OBJECT_STORAGE_SECRET
+      subfolder: dev
+    type: fortrabbit\ObjectStorage\Fs
+    url: $CDN_URL
+meta:
+  __names__:
+    0a04dc24-5770-46b1-a339-d12721a592ce: Aktivitäten-Seiten # Aktivitäten-Seiten
+    00b6694f-ff5d-4043-bc78-49af4feae29c: Bild # Bild
+    0bb99e04-bd9a-4506-8d53-a77f0f7faaf8: 'Externer Autor' # Externer Autor
+    0d0e0a42-4c71-4ab5-8048-3e860565eca6: 'Vorlage für Veranstaltung' # Vorlage für Veranstaltung
+    1fa28b6b-69c6-4a6c-ba98-0ef58909b46e: 'Anzahl Beiträge' # Anzahl Beiträge
+    1fd8acf5-74da-4669-8756-88f97ad11ed0: Standard # Standard
+    2a15eb42-44d2-4ef2-8bd5-7cffd67283d1: Titel # Titel
+    2a47a8ab-ce89-4695-91b6-78f0f52c6e8d: Fax # Fax
+    2a35581f-979d-4c8d-ae05-38c7395de4e6: Situationsplan # Situationsplan
+    2d9b9db6-d737-481f-9110-aaf8a4445697: Box-Farbe # Box-Farbe
+    2e0c4766-9025-4f16-9261-f7ae3ff33771: Square # Square
+    2e17648f-09e8-4b43-88a1-92b246925e4d: Hotellerie # Hotellerie
+    2ffe3e70-9bde-47d1-8cd7-d2492676dc5d: Hotellerie # Hotellerie
+    3a31e29e-28b3-44ae-b96a-88af5198109d: E-Mail # E-Mail
+    3ae4f5c6-cf0d-4193-a762-d44763358b77: Button-Ziel # Button-Ziel
+    3b3df95a-f6c3-46c0-9ef2-4bfef5247831: Standard # Standard
+    3d05bda8-4ebb-41bb-8dc8-0a0216912735: 'Bild & Botschaft' # Bild & Botschaft
+    4a380658-f9c6-4e21-a226-e27a997107f0: Nachname # Nachname
+    4c10316a-411c-4ec6-9d55-3c55e31e3837: Header # Header
+    4c154513-d544-4844-8797-affd6e360266: 'Google Maps' # Google Maps
+    4cd7bb54-2611-4ca7-819c-7c24b95476f2: Lokalitäten # Lokalitäten
+    004f9e15-6eea-461d-a0d9-3b175c41ce77: Standard # Standard
+    4fef3a87-bb5c-4f93-add0-c81e457a46d1: Element # Element
+    5b6dfe74-4f0c-44fa-b405-871bf4abed9c: Benutzerverwaltung # Benutzerverwaltung
+    5b11741c-b853-462c-a722-7dcb90ea3a89: Opan-Button # Opan-Button
+    5bc00a1b-2636-446a-b25c-2dfb44fe1bf7: Text # Text
+    5f50feae-7b02-4296-a42f-9a97ce8cfaed: Vorstand-Block # Vorstand-Block
+    6a3b8d81-4ba2-42c6-9bcc-3ac1876507eb: Button # Button
+    6a47eda7-5626-4f86-af6e-c123f3075757: Titelbild # Titelbild
+    6b9dd54d-c945-4b1b-8a59-f74fe7e827dc: t # t
+    6ba0a247-69b6-4586-ad86-4a8300bd4933: Zielgruppen # Zielgruppen
+    6d064992-c34b-4ef0-9b87-cb1b661bf7df: Datenschutz # Datenschutz
+    7b1fd445-81ea-436d-8033-89fbc11a6ca2: Teaser # Teaser
+    07b387b1-5caf-4e10-9dba-95961ecf1c09: Kachel-Farbe # Kachel-Farbe
+    7be5ec08-180c-44b3-8ce8-2a23a9c378eb: 'Redactor Text SimplePlus' # Redactor Text SimplePlus
+    07d8e39d-c7ad-412f-a60e-886ee471ddfd: Portrait # Portrait
+    7efffe68-08da-4be7-84cb-405497b61121: Komponenten # Komponenten
+    7f91b341-6f35-4ce9-8cd1-7ab5c5b9b7e6: Bild # Bild
+    8a3c23f8-0bc3-4c8c-bfc5-7c2e2f5f4c19: Allgemein # Allgemein
+    8a4dc2a9-b4b0-4dd5-8d70-4502a16722e5: Text # Text
+    8a4f4bfd-6801-4e54-bde4-69eac186d83d: Lead-Text # Lead-Text
+    8a35cb9b-0a22-4f63-be32-318ab40c3b8c: Breite # Breite
+    8aff0e57-44dd-4095-8115-20d244ad1deb: Datenschutz # Datenschutz
+    8dac9379-806e-4747-acaa-a45db4144f94: Wohnen # Wohnen
+    8e4e3768-a4a9-4988-be55-075e97aed157: Firmenname # Firmenname
+    8f7c0986-6e59-416f-a40c-3cafdb4e5953: $SYS_NAME # $SYS_NAME
+    9a03a6ed-7c25-4c3e-92fe-79bd3fef61e7: Vollbildzeile # Vollbildzeile
+    9a89342f-6409-4c6d-84c2-03209ae775f6: 'Zwei Spalten' # Zwei Spalten
+    9cdc37f9-2156-4052-8a60-9c9e22097549: Bildergalerie # Bildergalerie
+    9e333bc3-1995-4f95-8604-b0caff73788f: 'Header Low' # Header Low
+    9fd862c7-99c9-44f9-b606-1f37b535b50b: Akkordeon # Akkordeon
+    010d5948-7433-438e-a235-bb12f0234f64: Aktivitäten # Aktivitäten
+    13dab699-ff85-46be-aeca-ccf3161c7a2e: Einstellungen # Einstellungen
+    13f8b1c6-e4d6-4c46-bea7-8886093a8144: Ort # Ort
+    17b4894f-2811-4992-b36e-a42a919cc0ad: 'Intranet-Zugang (read-only)' # Intranet-Zugang (read-only)
+    24a29f2e-c32b-4ba2-98a5-e928cec7e7f0: Opan-Button # Opan-Button
+    28d29cb9-c818-45e0-818d-d902c3b53c9a: Bild # Bild
+    31e8682b-53d0-4efb-9975-e0387a89c0fd: 'Versandbestätigung Kontaktformular' # Versandbestätigung Kontaktformular
+    39eede98-e0a0-4410-9e68-1f4479e6c779: News # News
+    40f09193-87cb-4bd1-9930-76c625d38f47: 'Quelle / Author' # Quelle / Author
+    45ce050b-b0b9-48ae-8c01-3d4a9f6f233d: Anordnung # Anordnung
+    46b8aa6f-0600-4448-b3fa-18417e3fe598: Text # Text
+    51d61b0e-ad07-442e-9443-00e469fd5f5b: Text-Ausrichtung # Text-Ausrichtung
+    52d467fa-059b-40cd-8b69-7814ffa994c7: Globals # Globals
+    65a78583-df23-4439-a9a0-e643f9dc4933: Title-Overline # Title-Overline
+    66f70f9a-ce00-430b-afc9-c3dd1ca00e23: Bild # Bild
+    067ec299-5c0e-4965-b226-b1194b377790: Rückblick # Rückblick
+    69a87f15-72c2-446c-a730-3eb979ac361e: Link # Link
+    71f160f1-36c0-4e93-9d35-f7759a36bfb4: Impressum # Impressum
+    75fdf69a-4a7d-441d-a66d-d72fc9471b1a: 'Social Profiles' # Social Profiles
+    78e4c4a7-8bdb-4ce9-bfdf-a9acd359bab2: Lokalität # Lokalität
+    079b8f03-dfe2-48b8-aa9e-d18cb65760c5: Aktivitäten # Aktivitäten
+    085e2d53-fb75-46fc-b3c8-c42267dd9aa8: Button-Text # Button-Text
+    87daceef-07b4-45bc-9502-7eada98bf283: Content-Blöcke # Content-Blöcke
+    88b96b37-eff5-40b7-91cc-9dbd4f00da8f: Text # Text
+    126c8229-dc23-460c-aeb6-bdc886b6dbe6: Titel # Titel
+    161ea3a8-41c3-4cd1-944c-a418ed89f7b7: 'Header Call-to-Action Kreis' # Header Call-to-Action Kreis
+    237ead47-fe82-44cf-9690-12b87ff8c4c5: Home # Home
+    275d7d80-4d75-49cf-aa8b-9c1b4be69e81: PLZ # PLZ
+    334dc69c-b2cf-4859-9cbd-ce95e881cb97: Telefon # Telefon
+    479ec2fa-ddb7-4750-b07a-ed794e759d6d: 'Social Profiles' # Social Profiles
+    532bb106-b58d-461f-b9bf-54c9b2b4ab33: Hintergrundbild # Hintergrundbild
+    618feaba-1401-4a5b-9b4f-ab4ea0d88a62: Breite # Breite
+    660bdc7d-598b-4ca2-91f2-4262a2440f8b: 'Interne Dateien' # Interne Dateien
+    832d4cad-5ca8-41c8-9073-f6daf04fd497: Farbe # Farbe
+    886f070a-cb44-450c-9a19-eb7233bcf001: Text # Text
+    01490cc5-08a2-49e9-83be-2bf718bcc8a0: 'Public Schema' # Public Schema
+    1552cba9-27ff-4916-a33d-83229caf41a2: Impressum # Impressum
+    1970d302-b9d6-4684-9869-b1aefe8cd32d: Poweruser # Poweruser
+    2624cec9-061d-4431-9b04-f1b41ee88215: News-Beiträge # News-Beiträge
+    3928f513-4b1e-4af8-ace9-3bbe20b0c4e9: News # News
+    4554c04a-40cb-459e-8db6-4f02dea5613c: Rückblicke # Rückblicke
+    5416f4aa-5c8c-4730-a6d2-1dc6f15b764f: Funktion # Funktion
+    7216e3c6-766d-4677-a3bd-931760ee0dba: Formular # Formular
+    9127c6f9-9525-4abe-be1a-5f522df3c861: $SYS_NAME # $SYS_NAME
+    38430b0e-4149-4c59-9289-9958508c2675: Titel # Titel
+    055928d7-a692-4a58-8d1a-fad0f4605689: 'Spezielle Inhalte' # Spezielle Inhalte
+    066820c4-c9b5-4088-b69f-e0e262e3ee63: 'Button (optional)' # Button (optional)
+    77591cba-5c78-42a2-9a4d-da78ed8c11af: Titel-Text-Block # Titel-Text-Block
+    85920e4c-6cb0-41a1-9004-6a5300de8391: Text # Text
+    147904fd-6a31-4173-befe-d73463253ed6: 'Quelle / Autor' # Quelle / Autor
+    215008ac-e8a5-4256-9b36-889c61e69eff: Common # Common
+    604630ba-450f-4a73-9cc0-9c4b0b273686: 'Quelle / Author' # Quelle / Author
+    846778d4-321b-487d-8fe4-01f3ee7de40c: 'In Text' # In Text
+    2427196e-3640-41b8-88fa-f50ba5047337: 'Externer Autor' # Externer Autor
+    4110572d-1edb-4476-848c-56fc9445567e: Spitex # Spitex
+    8025309e-1527-4fcf-a58a-bdb051215069: 'Abstand nach oben' # Abstand nach oben
+    8689207e-cb7d-4f48-bce2-3efbab308dc1: Teammitglieder # Teammitglieder
+    12023467-3ec3-4db1-ae0e-f5de70de3aaa: Bemerkungen # Bemerkungen
+    67416391-cf4f-4242-8660-4906cd567a89: Zitat # Zitat
+    67954317-4873-4ce8-9b55-be19175e1237: 'Spezielle Blöcke' # Spezielle Blöcke
+    98194429-924f-45a8-aaf7-e9c0d2055f9b: Bildergalerie # Bildergalerie
+    a0a76ca9-a17f-47b0-8583-fdee4f43a6c6: Beiträge # Beiträge
+    a0b3d3a2-504c-4227-89ed-755d126528e3: Formular # Formular
+    a6d9019d-9cbe-4586-ae9d-a72521ba354e: Thema # Thema
+    a54cd878-231a-480d-a0a8-683b4ce26bd7: Downloads # Downloads
+    a286d142-21b3-4581-a519-a6ced127e0ae: Aktivitäten # Aktivitäten
+    a79920c0-801d-495a-a41f-36add74f5319: 'News&Ratgeber' # News&Ratgeber
+    aa5f8c07-2878-4640-b184-d1f8261ffc20: 'Image Only' # Image Only
+    ac3e0883-9ef6-495b-bbe9-3b5aa910c4ee: Ausrichtung # Ausrichtung
+    acea00b9-5da4-42e0-bf6d-51660c181f40: Aktivitäten # Aktivitäten
+    ad4fec4e-bcc8-46fa-88da-93835e93338a: 'Sophie Guyer' # Sophie Guyer
+    af6cb2c5-7d46-494b-b7c3-cfc1cea57b3e: Zielgruppen # Zielgruppen
+    b00ea68c-8eba-40e6-b2b6-87ee41b8473e: Editor # Editor
+    b08b0017-16d9-4d2b-a160-d3c050b67019: 'Text für "Keine Resultate gefunden"' # Text für "Keine Resultate gefunden"
+    b4a37b0c-3753-4369-b084-cc0e6501d07b: 'Aktuellste News-Beiträge' # Aktuellste News-Beiträge
+    b7e96d77-53ad-4ca6-b822-43a8093ec898: Team # Team
+    b9cc2788-986a-434c-86f9-428f545e165d: Kontakt # Kontakt
+    b21cd4fa-97ca-47d9-877c-3c5ac507b5da: Text # Text
+    b54f2bd0-8d40-4afa-a8cb-0e27ee121596: 'Redactor Text' # Redactor Text
+    b295ea57-abae-4faa-be54-1c7e86956ceb: Inhalt # Inhalt
+    b438a2f2-5aea-4042-98a5-09661bb1b62e: Schritt # Schritt
+    b7747b1c-b7d1-4853-aecf-19b134ac11ae: Neo # Neo
+    bbca3bfe-956d-4a71-a5ff-3d41530896fb: Button # Button
+    bd6c759f-75ca-4395-9bc0-363ef33b8192: New # New
+    be045fdf-3956-4b5f-971f-250ad522c821: Titel # Titel
+    bfbc6692-cb88-43cb-bcdd-57aee05ac2b1: 'Zeilen-Typ mit...' # Zeilen-Typ mit...
+    c4a64ead-5f01-43b7-a530-087e0399907a: Kontaktdaten # Kontaktdaten
+    c6ae74c1-4a92-4a6e-9927-cc1761b3f3d2: Spitex # Spitex
+    c86ab6a8-e061-4236-b1dd-4521f03f879c: Spezielles # Spezielles
+    c474d871-f53e-4314-83a5-9a1527400a34: Text # Text
+    c9248860-f161-4265-8165-0a0367e7c357: 'Kalender Ausblick' # Kalender Ausblick
+    caa10602-6f6f-4e6b-be96-1b74923ffc6a: Name # Name
+    cccc276f-76f1-40ae-a964-281e078791fe: Team # Team
+    cf86536c-27a9-43f6-b3ad-5ae82fda39eb: Art # Art
+    d02ff229-035c-48bb-aa78-79c2723d637d: Vorname # Vorname
+    d9e6bfc0-4d95-4b96-8e79-b3e8e480d33b: Footer # Footer
+    d68fa7b1-f9da-4f43-b474-be220edc9de3: Home # Home
+    d669a8a8-4d21-4855-8154-c5fa76a27db5: Team # Team
+    d96189f8-5ee1-420a-855b-aa2b2eef7409: Navigation # Navigation
+    d264285e-fbff-447b-8a82-d6ff1f72bc49: Kontakt # Kontakt
+    da488c85-8f0b-4cf7-aa6e-69539bb43673: Website # Website
+    daf27686-f50f-442f-b5a6-1669b5259c0e: Text # Text
+    dc291753-8847-4e49-bc83-2d8e2e2df59d: 'Alle News-Beiträge' # Alle News-Beiträge
+    de7b07a7-55ae-44d4-acc8-57d67ae65098: Vollbildzeile # Vollbildzeile
+    dfdd2912-b5c1-4601-82a2-43be4bd1f902: Adresse # Adresse
+    e8cf9f80-8f2f-4eaf-98c0-826fdea1e1ab: Titel-Grösse # Titel-Grösse
+    e585eef4-d478-42f2-bd19-c3904d1d0575: Intranet-Zugang # Intranet-Zugang
+    e775cbc3-a26c-4a96-ba77-17fe480404fe: 'Blog-Beiträge pro Seite' # Blog-Beiträge pro Seite
+    e91952b9-93e0-4427-b1a1-4e3b6415c986: Bild # Bild
+    e6263340-32e4-4117-904f-d6836f35a7bd: Downloads # Downloads
+    ea874098-180a-40c3-aa02-40ebc5434bb0: Vorteile # Vorteile
+    ebf27a4a-91d3-434e-93da-0f85d078b534: Content-Box # Content-Box
+    ec38179e-e5dc-4e93-9e05-87295b8d8697: Mitglied # Mitglied
+    ed7cb5c2-d98c-48fb-b033-83aecf9c869b: Object-Storage # Object-Storage
+    f3ba98eb-c9b1-4d4e-937c-65260a0ca889: Wohnen # Wohnen
+    f3c02f46-7585-4f62-85fc-0c26355e8b23: Text # Text
+    f6f71e73-569d-476d-bb27-5dc70ae99fea: Ablauf # Ablauf
+    f93807b1-4688-4a37-86e0-de4c1ee0c4d3: Titel # Titel
+    fc8e5284-776a-41df-bf12-459409a60e33: FullWidth # FullWidth
+    fd5408fd-c47d-4b92-9dce-97d42faa41f5: Standard # Standard
+    fdfea637-9d9a-4e0d-8e75-3a6217c969d6: Text # Text
+    fea50c4b-4607-4f94-ad62-428efbe1d137: Aktivitäten # Aktivitäten
+    ffdc79ed-f1d9-41e3-a305-6e0a0a368e63: Header-Bild # Header-Bild
+plugins:
+  calendar:
+    edition: pro
+    enabled: true
+    licenseKey: H3NORWVFLMRXER7AJK04JNJC
+    schemaVersion: 5.0.1
+    settings:
+      allDay: false
+      authoredEventEditOnly: ''
+      defaultView: month
+      demoBannerDisabled: ''
+      descriptionFieldHandle: null
+      eventDuration: 60
+      firstDayOfWeek: '1'
+      guestAccess: null
+      locationFieldHandle: null
+      overlapThreshold: 5
+      pluginName: Aktivitäten
+      quickCreateEnabled: '1'
+      showDisabledEvents: '1'
+      showMiniCal: ''
+      timeFormat: 24-hour
+      timeInterval: 30
+  document-helpers:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  expanded-singles:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      expandSingles: '1'
+      redirectToEntry: '1'
+  formie:
+    edition: standard
+    enabled: true
+    licenseKey: RHM2J3LM9N1HYXZBNAKF49R0
+    schemaVersion: 2.0.19
+    settings:
+      ajaxTimeout: 10
+      alertEmails: null
+      defaultDateDisplayType: ''
+      defaultDateTime: null
+      defaultDateValueOption: ''
+      defaultEmailTemplate: ''
+      defaultFileUploadVolume: ''
+      defaultFormTemplate: ''
+      defaultInstructionsPosition: verbb\formie\positions\AboveInput
+      defaultLabelPosition: verbb\formie\positions\AboveInput
+      defaultPage: forms
+      enableCsrfValidationForGuests: true
+      enableGatsbyCompatibility: false
+      enableLargeFieldStorage: false
+      enableUnloadWarning: true
+      maxIncompleteSubmissionAge: 30
+      maxSentNotificationsAge: 30
+      pdfPaperOrientation: portrait
+      pdfPaperSize: letter
+      pluginName: Formulare
+      saveSpam: true
+      sendEmailAlerts: false
+      sentNotifications: true
+      spamBehaviour: showSuccess
+      spamBehaviourMessage: ''
+      spamEmailNotifications: false
+      spamKeywords: ''
+      spamLimit: 500
+      useQueueForIntegrations: true
+      useQueueForNotifications: true
+  fortrabbit-object-storage:
+    edition: standard
+    enabled: true
+    schemaVersion: '2.0'
+  freeform:
+    edition: lite
+    enabled: true
+    licenseKey: N7KKG65250JAKBT33ZL85XNM
+    schemaVersion: 3.6.5
+    settings:
+      ajaxByDefault: ''
+      alertNotificationRecipients: null
+      autoScroll: true
+      autoScrollToErrors: true
+      badgeType: all
+      blockedEmails: ''
+      blockedEmailsError: 'Invalid Email Address'
+      blockedIpAddresses: ''
+      blockedKeywords: ''
+      blockedKeywordsError: 'Invalid Entry Data'
+      bypassSpamCheckOnLoggedInUsers: ''
+      clientDigestFrequency: 1
+      clientDigestRecipients: null
+      customErrorMessage: ''
+      customHoneypotName: custom_fieldtype
+      defaultTemplates: '1'
+      defaultView: dashboard
+      digestFrequency: 1
+      digestOnlyOnProduction: false
+      digestRecipients: null
+      displayFeed: true
+      emailTemplateDirectory: null
+      emailTemplateStorage: db
+      exportHandlesAsNames: ''
+      exportLabels: ''
+      fieldDisplayOrder: name
+      fillWithGet: false
+      footerScripts: false
+      formFieldShowOnlyAllowedForms: ''
+      formSubmitDisable: true
+      formSubmitExpiration: ''
+      formTemplateDirectory: null
+      formattingTemplate: flexbox.html
+      freeformHoneypot: '1'
+      freeformHoneypotEnhancement: '1'
+      hideBannerDemo: '1'
+      hideBannerOldFreeform: false
+      minimumSubmitTime: ''
+      pluginName: Formulare
+      purgableSpamAgeInDays: '0'
+      purgableSubmissionAgeInDays: null
+      purgableUnfinalizedAssetAgeInMinutes: 180
+      recaptchaBehaviour: display_error
+      recaptchaEnabled: false
+      recaptchaErrorMessage: 'Please verify that you are not a robot.'
+      recaptchaKey: null
+      recaptchaLazyLoad: false
+      recaptchaMinScore: 0.5
+      recaptchaSecret: null
+      recaptchaSize: normal
+      recaptchaTheme: light
+      recaptchaType: v2_checkbox
+      rememberPageSubmitOrder: true
+      removeNewlines: ''
+      renderFormHtmlInCpViews: '1'
+      salesforce_client_id: null
+      salesforce_client_secret: null
+      salesforce_password: null
+      salesforce_username: null
+      saveFormSessionLimit: 10
+      saveFormTtl: 30
+      scriptInsertLocation: footer
+      scriptInsertType: pointers
+      sessionContext: payload
+      sessionContextCount: 100
+      sessionContextSecret: ''
+      sessionContextTimeToLiveMinutes: 180
+      sessionEntryMaxCount: 50
+      sessionEntryTTL: 10800
+      showErrorsForBlockedEmails: ''
+      showErrorsForBlockedKeywords: ''
+      showTutorial: ''
+      spamFolderEnabled: '1'
+      spamProtectionBehaviour: simulate_success
+      submissionThrottlingCount: ''
+      submissionThrottlingTimeFrame: m
+      successTemplateDirectory: null
+      twigInHtml: '1'
+      twigInHtmlIsolatedMode: '1'
+      updateSearchIndexes: '1'
+  incognito-field:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.1.1
+  knock-knock:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.1.1
+    settings:
+      allowIps: ''
+      checkInvalidLogins: ''
+      denyIps: ''
+      enabled: ''
+      forcedRedirect: null
+      invalidLoginWindowDuration: '3600'
+      loginPath: ''
+      maxInvalidLogins: '10'
+      password: sophie
+      protectedUrls: ''
+      siteSettings:
+        __assoc__:
+          -
+            - default
+            -
+              __assoc__:
+                -
+                  - enabled
+                  - ''
+                -
+                  - password
+                  - ''
+                -
+                  - template
+                  - ''
+      template: ''
+      unprotectedUrls: ''
+      useRemoteIp: ''
+  navigation:
+    edition: standard
+    enabled: true
+    licenseKey: Z0KO09PI0SGYMP22OZ6W4X81
+    schemaVersion: 2.0.7
+  neo:
+    edition: standard
+    enabled: true
+    licenseKey: ZKNTVHP1QUHPUTHQUIS9BSE5
+    schemaVersion: 4.0.0
+  oembed:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
+    settings:
+      enableCache: ''
+      enableGdpr: ''
+      enableNotifications: ''
+      facebookKey: ''
+      notificationEmail: info@nexocom.ch
+      previewHidden: '1'
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  s3securedownloads:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.1.0
+    settings:
+      forceFileDownload: ''
+      linkExpirationTime: '43200'
+      requireLoggedInUser: '1'
+  super-pdf:
+    edition: standard
+    enabled: true
+    licenseKey: GELTFY04BOXDLYI7SLSVJYLH
+    schemaVersion: 5.0.1
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
+  typedlinkfield:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+  ui-element-fields:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: pro
+  live: true
+  name: $SYS_NAME
+  retryDuration: null
+  schemaVersion: 4.5.3.0
+  timeZone: Europe/Zurich

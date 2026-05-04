@@ -1,0 +1,37 @@
+<div class="floating-actions">
+    <span class="action action-back-to-top" onclick="window.scroll(0,0)" title="Nach oben">
+        <img src="/assets/icons/arrow.svg" alt="">
+    </span>
+    <span class="action action-font-size" id="font-size" title="Schrift vergrössern">
+        <img src="/assets/icons/font.svg" alt="">
+    </span>
+    <a href="/kontakt#wie-können-sie-das-alterszentrum-unterstützen" class="action action-heart" title="Spenden">
+        <img src="/assets/icons/heart.svg" alt="">
+    </a>
+    <a href="/aktivitaeten" class="action action-activities" title="Aktivitäten">
+        <img src="/assets/icons/dice.svg" alt="">
+    </a>
+    <a href="/news" class="action action-news" title="News">
+        <img src="/assets/icons/news.svg" alt="">
+    </a>
+</div>
+<script>
+	const html = document.getElementsByTagName('html')[0];
+
+	let state = localStorage.getItem('font-size-big');
+	state = state === 'true';
+
+	if(typeof state === 'undefined'){
+		localStorage.setItem('font-size-big', false);
+		state = false;
+	}
+
+	if(state){
+		html.classList.add('big');
+    }
+	document.getElementById('font-size').addEventListener('click', function(){
+		state = !state;
+		html.classList.toggle('big');
+		localStorage.setItem('font-size-big', state);
+	});
+</script>

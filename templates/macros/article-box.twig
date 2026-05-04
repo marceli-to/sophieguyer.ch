@@ -1,0 +1,8 @@
+{% macro ArticleBox(article) %}
+    <article class="news-box">
+        <time datetime="">{{ article.postDate|date('d.m.Y') }}</time>
+        <h3>{{ article.title }}</h3>
+        {{ article.teaser }}
+        <a class="button button-secondary" href="{{ article.url }}" title="{{ article.title }}">mehr</a>
+    </article>
+{% endmacro %}

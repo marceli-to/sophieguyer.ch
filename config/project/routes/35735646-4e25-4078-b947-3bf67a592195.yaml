@@ -1,0 +1,6 @@
+siteUid: null
+sortOrder: 2
+template: pages/print.twig
+uriParts:
+  - aktivitaeten-drucken
+uriPattern: aktivitaeten-drucken

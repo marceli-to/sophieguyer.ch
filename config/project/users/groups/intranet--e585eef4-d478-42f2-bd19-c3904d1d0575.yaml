@@ -1,0 +1,16 @@
+description: 'Vollzugriff inkl. hochladen/bearbeiten/löschen.'
+handle: intranet
+name: Intranet-Zugang
+permissions:
+  - accesscp
+  - 'createfolders:660bdc7d-598b-4ca2-91f2-4262a2440f8b' # Interne Dateien
+  - 'deleteassets:660bdc7d-598b-4ca2-91f2-4262a2440f8b' # Interne Dateien
+  - 'deletepeerassets:660bdc7d-598b-4ca2-91f2-4262a2440f8b' # Interne Dateien
+  - 'editimages:660bdc7d-598b-4ca2-91f2-4262a2440f8b' # Interne Dateien
+  - 'editpeerimages:660bdc7d-598b-4ca2-91f2-4262a2440f8b' # Interne Dateien
+  - 'replacefiles:660bdc7d-598b-4ca2-91f2-4262a2440f8b' # Interne Dateien
+  - 'replacepeerfiles:660bdc7d-598b-4ca2-91f2-4262a2440f8b' # Interne Dateien
+  - 'saveassets:660bdc7d-598b-4ca2-91f2-4262a2440f8b' # Interne Dateien
+  - 'savepeerassets:660bdc7d-598b-4ca2-91f2-4262a2440f8b' # Interne Dateien
+  - 'viewassets:660bdc7d-598b-4ca2-91f2-4262a2440f8b' # Interne Dateien
+  - 'viewpeerassets:660bdc7d-598b-4ca2-91f2-4262a2440f8b' # Interne Dateien

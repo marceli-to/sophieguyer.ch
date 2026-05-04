@@ -1,0 +1,18 @@
+{% import '/macros/download.twig' as Download %}
+
+<div class="container {{ block.marginTop }}">
+    <section class="downloads">
+        <article class="download-category">
+            {% if block.titel != "" %}
+                <h2>{{ block.titel }}</h2>
+            {% endif %}
+            <ul class="downloads-list {{ block.style ?? '' }}">
+                {% for download in block.downloads.all() %}
+                <li class="download-item">
+                    {{ Download.Download(download.getUrl(), download.title) }}
+                </li>
+                {%  endfor %}
+            </ul>
+        </article>
+    </section>
+</div>

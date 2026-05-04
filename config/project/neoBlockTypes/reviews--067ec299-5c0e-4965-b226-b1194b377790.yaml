@@ -1,0 +1,36 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+fieldLayouts:
+  f4172947-fc59-4ee9-b6a0-9bd13dad53ce:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'An dieser Stelle wird der Abschnitt "Rückblick" angezeigt.'
+            type: craft\fieldlayoutelements\Tip
+            uid: 8777b5e2-3728-4775-916c-06caa7ae0fb3
+            userCondition: null
+        name: Hinweis
+        uid: 4dc0d89c-4d72-481b-8a19-b25ea46edfc9
+        userCondition: null
+group: 055928d7-a692-4a58-8d1a-fad0f4605689 # Spezielle Inhalte
+groupChildBlockTypes: true
+handle: reviews
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Rückblick
+topLevel: true

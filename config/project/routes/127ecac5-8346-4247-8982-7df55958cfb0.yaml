@@ -1,0 +1,6 @@
+siteUid: null
+sortOrder: 5
+template: pages/api-articles.twig
+uriParts:
+  - api/news
+uriPattern: api/news

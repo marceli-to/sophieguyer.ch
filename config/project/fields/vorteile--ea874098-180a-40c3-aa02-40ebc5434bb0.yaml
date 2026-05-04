@@ -1,0 +1,30 @@
+columnSuffix: wzlgbmbi
+contentColumnType: string
+fieldGroup: b7747b1c-b7d1-4853-aecf-19b134ac11ae # Neo
+handle: vorteile
+instructions: null
+name: Vorteile
+searchable: false
+settings:
+  blockTypeFields: 0
+  changedFieldIndicator: null
+  columns:
+    __assoc__:
+      -
+        - 46b8aa6f-0600-4448-b3fa-18417e3fe598 # Text
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_vorteile}}'
+  fieldLayout: row
+  maxRows: null
+  minRows: 1
+  propagationKeyFormat: null
+  propagationMethod: all
+  selectionLabel: 'Vorteil hinzufügen'
+  staticField: null
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

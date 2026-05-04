@@ -1,0 +1,33 @@
+{% set sectionHandle = entry.section.handle %}
+{% set criteria = {section: sectionHandle, orderBy: 'postDate'} %}
+{% set prevArticle = entry.getPrev(criteria) %}
+{% set nextArticle = entry.getNext(criteria) %}
+
+{% if prevArticle %}
+<a href="{{ prevArticle.url }}" class="button button-primary">
+    <svg x="0px" y="0px" viewBox="0 0 42.349 42.349" xml:space="preserve">
+        <polygon class="st0"
+                 points="36.02,18.896 14.393,18.896 17.898,15.638 15.174,12.708 6.366,20.896 15.174,29.085 17.898,26.155 14.393,22.896 36.02,22.896 "/>
+    </svg>
+</a>
+{% endif %}
+
+<a href="/{{ craft.app.request.segments|first }}" class="button button-primary">
+    <svg x="0px" y="0px" viewBox="0 0 42.349 42.349" xml:space="preserve">
+        <rect x="4.461" y="10.451" class="st0" width="9.47" height="9.47"/>
+        <rect x="16.44" y="10.451" class="st0" width="9.47" height="9.47"/>
+        <rect x="28.418" y="10.451" class="st0" width="9.47" height="9.47"/>
+        <rect x="4.461" y="22.429" class="st0" width="9.47" height="9.47"/>
+        <rect x="16.44" y="22.429" class="st0" width="9.47" height="9.47"/>
+        <rect x="28.418" y="22.429" class="st0" width="9.47" height="9.47"/>
+    </svg>
+</a>
+
+{% if nextArticle %}
+<a href="{{ nextArticle.url }}" class="button button-primary">
+    <svg x="0px" y="0px" viewBox="0 0 42.349 42.349" xml:space="preserve">
+        <polygon class="st0"
+                 points="6.366,22.897 27.994,22.897 24.489,26.155 27.213,29.085 36.02,20.897 27.213,12.708 24.489,15.638 27.994,18.897 6.366,18.897 "/>
+    </svg>
+</a>
+{% endif %}

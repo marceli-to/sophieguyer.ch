@@ -1,0 +1,17 @@
+.recent-articles {
+	font-size: 1.6rem;
+	line-height: 1.25;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 3rem;
+	
+	@include for-tablet-portrait-up {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@include for-tablet-landscape-up {
+		grid-template-columns: repeat(3, 1fr);
+		@at-root .big & {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}

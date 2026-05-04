@@ -1,0 +1,38 @@
+changedFieldIndicator: null
+field: 67954317-4873-4ce8-9b55-be19175e1237 # Spezielle Blöcke
+fieldLayouts:
+  bf85f6ba-108a-4929-bbb7-c8b17a4816e9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 5f50feae-7b02-4296-a42f-9a97ce8cfaed # Vorstand-Block
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e0a49dc2-d89f-4291-b91e-b59af3153d6d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 017147d2-4aa9-4e0e-b593-ff6b5bb76287
+        userCondition: null
+fields:
+  5f50feae-7b02-4296-a42f-9a97ce8cfaed: # Vorstand-Block
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: vorstandBlock
+    instructions: null
+    name: Vorstand-Block
+    searchable: false
+    settings:
+      style: tip
+      tip: 'An dieser Stelle wird der Vorstand eingeblendet'
+    translationKeyFormat: null
+    translationMethod: none
+    type: carlcs\uielementfields\fields\UiTip

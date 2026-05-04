@@ -1,0 +1,21 @@
+{% set currentUser = craft.app.user.identity %}
+
+{% if currentUser %}
+    {# Get all group handles for the user #}
+    {% set groupHandles = currentUser.getGroups()|map(g => g.handle) %}
+
+    {# Define target groups for exclusive membership #}
+    {% set targetGroups = ['intranet', 'intranetLight'] %}
+    
+    {# Check if the user is only in the allowed groups #}
+    {% set isExclusiveToTargetGroups = groupHandles|length > 0 and groupHandles|diff(targetGroups) == [] %}
+
+    {# Redirect based on exclusive group membership #}
+    {% if isExclusiveToTargetGroups %}
+        {% redirect cpUrl('assets/interneDateien') %}
+    {% else %}
+        {% redirect '/adm' %}
+    {% endif %}
+{% else %}
+    {% redirect '/' %}
+{% endif %}

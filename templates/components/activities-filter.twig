@@ -1,0 +1,53 @@
+<form class="activities-filters">
+    <div class="activities-filter activities-input">
+        <input id="range" placeholder="Zeitraum" type="text" aria-label="Zeitraum" readonly>
+    </div>
+    <div class="activities-filter activities-select" data-id="aktivitaet">
+        <div class="filter-item-title">
+            Aktivitäten
+            <img src="/assets/icons/chevron-down.svg" class="icon" alt="">
+        </div>
+        <ul class="filter-item-entries">
+            {% for activity in groupedActivities %}
+                <li>
+                    <label>
+                        <input type="checkbox" value="{{ activity.slug }}" data-parent="aktivitaet">
+                        <span class="text">{{ activity.title }}</span>
+                    </label>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="activities-filter activities-select" data-id="zielgruppe">
+        <div class="filter-item-title">
+            Zielgruppe
+            <img src="/assets/icons/chevron-down.svg" class="icon" alt="">
+        </div>
+        <ul class="filter-item-entries">
+            {% for targetAudience in filterableTargetAudiences %}
+                <li>
+                    <label>
+                        <input type="checkbox" value="{{ targetAudience.slug }}" data-parent="zielgruppe">
+                        <span class="text">{{ targetAudience.title }}</span>
+                    </label>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="activities-action">
+        <button type="reset" class="button button-reset">Filter zurücksetzen</button>
+    </div>
+    <div class="activities-action">
+        <a id="pdf" data-href="/aktivitaeten-pdf" href="/aktivitaeten-pdf" target="_blank" class="button button-reset button-reset-with-icon" aria-label="Als PDF exportieren">
+            <img class="icon" src="/assets/icons/pdf.svg" alt="PDF">
+        </a>
+    </div>
+    <div class="activities-action">
+        <a id="print" data-href="/aktivitaeten-drucken" href="/aktivitaeten-drucken" target="_blank" class="button button-reset button-reset-with-icon" aria-label="Drucken">
+            <img class="icon" src="/assets/icons/print.svg" alt="Print">
+        </a>
+    </div>
+</form>
+<script src="/js/plugins/litepicker.js"></script>
+<script src="/js/plugins/mobilefriendly.js"></script>
+<script src="/js/modules/activities.min.js"></script>

@@ -1,0 +1,9 @@
+{% import '/macros/accordion.twig' as Accordion %}
+
+<div class="container {{ block.marginTop }}">
+    <section class="accordions">
+        {% for accordionItem in block.item.all() %}
+        {{ Accordion.Accordion(accordionItem) }}
+        {% endfor %}
+    </section>
+</div>

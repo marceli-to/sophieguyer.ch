@@ -1,0 +1,37 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 215008ac-e8a5-4256-9b36-889c61e69eff # Common
+handle: headerImage
+instructions: 'Bei mehreren Bildern wird automatisch eine Slideshow generiert.'
+name: Header-Bild
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  defaultUploadLocationSubpath: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  previewMode: thumbs
+  restrictFiles: true
+  restrictLocation: true
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  restrictedLocationSubpath: header/
+  selectionLabel: 'Bild hinzufügen'
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: true
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

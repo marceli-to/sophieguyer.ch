@@ -1,0 +1,24 @@
+.reviews {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 9rem;
+	
+	
+	&-container {
+		display: grid;
+		width: 100%;
+		grid-template-columns: 1fr;
+		gap: 3rem;
+		
+		@include for-tablet-portrait-up {
+			grid-template-columns: 1fr 1fr;
+		}
+		@include for-tablet-landscape-up {
+			grid-template-columns: repeat(3, 1fr);
+		}
+		@include for-desktop-up {
+			grid-template-columns: 1fr;
+		}
+	}
+}

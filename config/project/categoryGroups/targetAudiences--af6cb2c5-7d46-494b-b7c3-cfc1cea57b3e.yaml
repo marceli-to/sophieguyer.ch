@@ -1,0 +1,47 @@
+defaultPlacement: end
+fieldLayouts:
+  05afac71-4fee-4197-a570-1b8f532931c2:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: Zielgruppe
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: fb1a8b0f-47fc-4a97-ad16-827f24e72357
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: c6b92739-6d4e-4aaa-83f3-72455aa511b4
+        userCondition: null
+handle: targetAudiences
+name: Zielgruppen
+siteSettings:
+  8f7c0986-6e59-416f-a40c-3cafdb4e5953: # $SYS_NAME
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: 848120ab-7e63-4470-8ecf-1ecf3c7eae41

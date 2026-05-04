@@ -1,0 +1,131 @@
+fieldLayouts:
+  765592ca-f9d0-4132-89c6-fa03970b8cde:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: dc6332e3-7a1d-4e9b-9ba3-53817729e72f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 07d8e39d-c7ad-412f-a60e-886ee471ddfd # Portrait
+            instructions: 'Bild wird quadratisch ausgegeben.'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 979c61be-1e0a-4886-888c-b3734f878952
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d02ff229-035c-48bb-aa78-79c2723d637d # Vorname
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 534b2b78-107f-45ec-a2af-96d6de61b902
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4a380658-f9c6-4e21-a226-e27a997107f0 # Nachname
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fe2cb0c9-110d-4566-a701-ff3b631cef3c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5416f4aa-5c8c-4730-a6d2-1dc6f15b764f # Funktion
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 546a6b39-59c7-4996-a067-1dcaafe2fe2f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 334dc69c-b2cf-4859-9cbd-ce95e881cb97 # Telefon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eef40686-8964-48b1-ba5e-cea6e87e763c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3a31e29e-28b3-44ae-b96a-88af5198109d # E-Mail
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 43ae9c3d-fcb0-45c6-ad5a-9a84e188dc18
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 07b387b1-5caf-4e10-9dba-95961ecf1c09 # Kachel-Farbe
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 481549bd-ecbc-44b9-bf60-d3a5ad16b57e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 8e53baa1-bd55-4024-bfce-3d2d46a65cfa
+        userCondition: null
+handle: default
+hasTitleField: false
+name: Standard
+section: 8689207e-cb7d-4f48-bce2-3efbab308dc1 # Teammitglieder
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{firstname} {lastname}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

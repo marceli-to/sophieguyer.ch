@@ -1,0 +1,33 @@
+defaultPlacement: end
+handle: footer
+instructions: null
+maxNodes: 5
+name: Footer
+permissions:
+  craft\elements\Asset:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Category:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Entry:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Tag:
+    enabled: ''
+    permissions: '*'
+  putyourlightson\campaign\elements\CampaignElement:
+    enabled: ''
+    permissions: '*'
+  verbb\navigation\nodetypes\CustomType:
+    enabled: '1'
+  verbb\navigation\nodetypes\PassiveType:
+    enabled: '1'
+propagationMethod: none
+siteSettings:
+  8f7c0986-6e59-416f-a40c-3cafdb4e5953: # $SYS_NAME
+    enabled: true
+sortOrder: 2
+structure:
+  maxLevels: 1
+  uid: 07ac15d0-26c0-4982-aabd-09734d775d2f

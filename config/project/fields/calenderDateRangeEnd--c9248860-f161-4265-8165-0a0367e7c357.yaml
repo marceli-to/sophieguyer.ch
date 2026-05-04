@@ -1,0 +1,20 @@
+columnSuffix: mhmhfnxf
+contentColumnType: smallint(3)
+fieldGroup: 52d467fa-059b-40cd-8b69-7814ffa994c7 # Globals
+handle: calenderDateRangeEnd
+instructions: 'Anzahl Tage für den Ausblick im Kalender.'
+name: 'Kalender Ausblick'
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: null
+  max: 365
+  min: 1
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: Tage
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="dns-prefetch" href="https://code.jquery.com/">
+    <link rel="dns-prefetch" href="{{ getenv('CDN_URL') }}">
+    <link rel="preconnect" href="https://code.jquery.com/" crossorigin>
+    <link rel="preconnect" href="{{ getenv('CDN_URL') }}" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    {% if devMode %}
+    <meta name="robots" content="noindex">
+    {% endif %}
+    <title>{{ entry.title ?? 'sophieguyer.ch' }}</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=4.2">
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    {% block css %}{% endblock %}
+
+    {% block head %}{% endblock %}
+    {% if not devMode %}
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FM2EQZC87R"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-FM2EQZC87R');
+	</script>
+    {% endif %}
+</head>
+<body>
+{% block content %}{% endblock %}
+
+
+{% include '/partials/floating-actions.twig' %}
+<script src="/js/app.min.js"></script>
+<script src="/js/plugins/lazysizes.min.js" async=""></script>
+</body>
+</html>

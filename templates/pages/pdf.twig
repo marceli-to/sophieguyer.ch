@@ -1,0 +1,14 @@
+{% set pdfSettings = {
+    filename: "My_PDF",
+    defaultPaperOrientation: 'landscape',
+    defaultPaperSize: 'a4',
+    isHtml5ParserEnabled: true,
+    isRemoteEnabled : true,
+    isJavascriptEnabled: true,
+} %}
+
+{% set templateVariables = {
+    isPdfRequest: true}
+%}
+
+{{ craft.superpdf.template("/pages/print.twig", pdfSettings, templateVariables) }}

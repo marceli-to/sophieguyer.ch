@@ -1,0 +1,68 @@
+columnSuffix: jcbedcqy
+contentColumnType: string
+fieldGroup: cccc276f-76f1-40ae-a964-281e078791fe # Team
+handle: theme
+instructions: null
+name: Kachel-Farbe
+searchable: false
+settings:
+  columnType: string
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Blau
+        -
+          - value
+          - blue
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Grün
+        -
+          - value
+          - green
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Rot
+        -
+          - value
+          - red
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Orange
+        -
+          - value
+          - orange
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Gelb
+        -
+          - value
+          - yellow
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

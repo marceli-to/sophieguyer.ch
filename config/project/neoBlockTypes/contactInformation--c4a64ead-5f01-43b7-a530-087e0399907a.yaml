@@ -1,0 +1,36 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+fieldLayouts:
+  efacd1d9-ec6e-4ff5-b792-f2f54acf67bc:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'An dieser Stelle wird die Adresse anhand der Daten aus dem Bereich "Globale Inhalte" angezeigt.'
+            type: craft\fieldlayoutelements\Tip
+            uid: 19cbd7a8-e5a1-493e-8642-4e3793882de7
+            userCondition: null
+        name: Hinweis
+        uid: 90834a39-d997-4637-a361-2e7bfae0dc95
+        userCondition: null
+group: 055928d7-a692-4a58-8d1a-fad0f4605689 # Spezielle Inhalte
+groupChildBlockTypes: true
+handle: contactInformation
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 1
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Kontaktdaten
+topLevel: true

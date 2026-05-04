@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: team
+name: Teammitglieder
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primäre eintrag Seite'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  8f7c0986-6e59-416f-a40c-3cafdb4e5953: # $SYS_NAME
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

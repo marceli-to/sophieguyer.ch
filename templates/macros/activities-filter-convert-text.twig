@@ -1,0 +1,16 @@
+{% macro activitiesFilterConvertSlugToTitle(allItems, getParams) %}
+
+    {% set beautifiedArray = [] %}
+
+    {% for getParam in getParams %}
+        {% for item in allItems %}
+            {% if item.slug == getParam %}
+                {% set beautifiedArray = beautifiedArray|merge([item.title]) %}
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        {% set beautifiedArray = beautifiedArray|merge(["Alle"]) %}
+    {% endfor %}
+
+    {{ beautifiedArray|join(', ') }}
+{% endmacro %}

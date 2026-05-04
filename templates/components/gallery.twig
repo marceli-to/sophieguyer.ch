@@ -1,0 +1,9 @@
+<section class="image-wall">
+    {% if block.gallery|length %}
+        {% for image in block.gallery.all() %}
+            <picture>
+                <img src="{{ image.getUrl('square') }}" alt="">
+            </picture>
+        {% endfor %}
+    {% endif %}
+</section>

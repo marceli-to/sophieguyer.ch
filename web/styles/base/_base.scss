@@ -1,0 +1,29 @@
+::-webkit-scrollbar{
+	width: 8px;
+	height: 8px;
+	background-color: #f3f3f3;
+}
+
+::-webkit-scrollbar-thumb{
+	-webkit-box-shadow: none;
+	background-color: $color-blue-dark;
+}
+
+* {
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+:target {
+	position: initial;
+	margin-top: -9em !important;
+	padding-top: 9em !important;
+}
+

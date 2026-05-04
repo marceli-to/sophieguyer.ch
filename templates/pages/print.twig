@@ -1,0 +1,46 @@
+
+{% extends '/partials/print-layout.twig' %}
+{% if isPdfRequest is defined and isPdfRequest == true %}
+    {% set isPdfRequest = true %}   
+{% else %}
+    {% set isPdfRequest = false %}
+{% endif %}
+{% block content %}
+    {% include '/partials/print-header.twig' %}
+    <main>
+        {% include "/components/activities.twig" %}
+    </main>
+{% endblock %}
+
+{% block css %}
+    {% if isPdfRequest is defined and isPdfRequest == true %}
+    <style>
+        * {
+            font-size: small;
+        }
+        table {
+            width: 100% !important;
+        }
+        .print-header {
+            height: 80px !important;
+            width: 100% !important;
+        }
+        main > .container {
+            margin-top: 1em !important;
+        }
+        .activities {
+            display: block;
+            padding-top: 0em !important;
+            margin-top: 0em !important;
+        }
+        #activities-table {
+            display: block;
+            padding-top: 3em;
+        }
+        .print-header > .container > img {
+            float: right !important;
+            margin-top: -100px !important;
+        }
+    </style>
+    {% endif %}
+{% endblock %}

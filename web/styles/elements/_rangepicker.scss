@@ -1,0 +1,17 @@
+:root{
+	--litepicker-is-today-color: #{$color-red};
+	--litepicker-day-color-hover: #{$color-blue};
+	--litepicker-is-in-range-color: #{rgba($color-blue-dark, 0.2)};
+	--litepicker-is-start-color-bg: #{$color-blue-dark};
+	--litepicker-is-end-color-bg: #{$color-blue-dark};
+	--litepicker-button-prev-month-color-hover: #{$color-blue};
+	--litepicker-button-next-month-color-hover: #{$color-blue};
+	--litepicker-button-reset-color-hover: #{$color-blue};
+}
+
+.litepicker{
+	font-family: "Figtree", sans-serif !important;
+	&.mobilefriendly[data-plugins*="mobilefriendly"]{
+		font-size: 1.6rem !important;
+	}
+}

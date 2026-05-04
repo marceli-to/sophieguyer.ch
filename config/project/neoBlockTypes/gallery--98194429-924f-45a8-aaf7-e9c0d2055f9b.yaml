@@ -1,0 +1,40 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+fieldLayouts:
+  0de12df9-e609-41b8-8e6e-52c5f16024e8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 9cdc37f9-2156-4052-8a60-9c9e22097549 # Bildergalerie
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f1a26b3a-8079-430f-8bec-88b0ae98f56a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: be497cdb-17e6-495c-a46d-95198960efaf
+        userCondition: null
+group: 7efffe68-08da-4be7-84cb-405497b61121 # Komponenten
+groupChildBlockTypes: true
+handle: gallery
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Bildergalerie
+topLevel: true

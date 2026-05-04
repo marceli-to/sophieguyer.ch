@@ -1,4 +1,4 @@
-dateModified: 1743082715
+dateModified: 1777921675
 elementSources:
   craft\elements\Entry:
     -
@@ -344,7 +344,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: RHM2J3LM9N1HYXZBNAKF49R0
-    schemaVersion: 2.0.19
+    schemaVersion: 2.0.21
     settings:
       ajaxTimeout: 10
       alertEmails: null
@@ -558,5 +558,5 @@ system:
   live: true
   name: $SYS_NAME
   retryDuration: null
-  schemaVersion: 4.5.3.0
+  schemaVersion: 4.17.0.3
   timeZone: Europe/Zurich

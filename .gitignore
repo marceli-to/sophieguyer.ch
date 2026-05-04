@@ -3,6 +3,7 @@
 .env.sh
 /.env
 /.env-prod
+/.env-staging
 /config/license.key
 
 # CLAUDE CODE

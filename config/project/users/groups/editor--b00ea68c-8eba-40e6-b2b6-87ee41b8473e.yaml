@@ -140,3 +140,8 @@ permissions:
   - 'viewpeerentrydrafts:d264285e-fbff-447b-8a82-d6ff1f72bc49' # Kontakt
   - 'viewpeerentrydrafts:d68fa7b1-f9da-4f43-b474-be220edc9de3' # Home
   - 'viewpeerentrydrafts:f3ba98eb-c9b1-4d4e-937c-65260a0ca889' # Wohnen
+  - 'changeauthorforpeerentries:0a04dc24-5770-46b1-a339-d12721a592ce' # Aktivitäten-Seiten
+  - 'changeauthorforpeerentries:2624cec9-061d-4431-9b04-f1b41ee88215' # News-Beiträge
+  - 'changeauthorforpeerentries:4554c04a-40cb-459e-8db6-4f02dea5613c' # Rückblicke
+  - 'changeauthorforpeerentries:ad4fec4e-bcc8-46fa-88da-93835e93338a' # Sophie Guyer
+  - 'changeauthorforpeerentries:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Teammitglieder

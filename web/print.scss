@@ -1,0 +1,14 @@
+@import "styles/abstracts/variables",
+"styles/abstracts/mixins";
+
+@import "styles/base/normalize",
+"styles/base/base",
+"styles/base/typography",
+"styles/base/container";
+
+@import "styles/components/main",
+"styles/components/activities-table",
+"styles/components/activities-filter-text",
+"styles/components/print-header";
+
+@import "styles/elements/table";

@@ -28,11 +28,17 @@
 !/web/assets/
 !/web/.htaccess
 !/web/index.php
+!/web/js
+!/web/js/**
 !/web/styles
 !/web/styles.scss
 !/web/styles.css
 !/web/styles.css.map
+!/web/print.scss
+!/web/print.css
+!/web/print.css.map
 !/web/favicon.ico
+!/web/robots.txt
 
 # MISC FILES
 .cache
